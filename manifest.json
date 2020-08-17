@@ -21,6 +21,12 @@
                 "filename": "Lab2.md",
                 "title": "OIC Process Lab 2",
                 "description": "OIC Process – Leveraging a DMN Rule"
+            },
+            {
+                "number": "03",
+                "filename": "workshops/visualbuilder/basic.md",
+                "title": "xxx",
+                "description": "xxxx"
             }
         ]
     }
