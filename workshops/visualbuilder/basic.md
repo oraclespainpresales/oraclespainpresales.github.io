@@ -9,37 +9,11 @@ For advanced topics, you can go to the Advanced lab
 
 ### Introducing Oracle Visual Builder
 
-``this should be monospaced text``
+Oracle Visual Builder is a visual and declarative cloud environment for **LowCode** developing and hosting engaging mobile and web applications.
 
-For those of you completely new to OIC (Oracle Integration Cloud):
+Oracle Visual Builder provides easy access to data from any REST-based service, and enables the creation of custom reusable business objects for storing and managing data. Using the cloud-based visual development tools, you can create and test responsive web applications and native mobile apps without the need to install any additional software. The visual designer enables you to quickly layout pages in your applications by dragging and dropping UI components, customizing their attributes and defining their behavior.
 
-Blah blah
-
-There are essentially three key components in OIC:
-
--   The **Integration**: It allows you to build integrations and connections to
-    a variety of systems, Oracle (E-business Suite, ERP Cloud, ServiceCloud,
-    SalesCloud, etc.) or non-Oracle (SAP, SalesForce, Google Mail, Facebook,
-    EverNote, etc.)
-
--   The **Process Builder** 
-
-    -   Create Workflows
-
-    -   Create GUI to handle the human tasks of these workflows
-
--   The **Visual Builder Cloud Service**, from which you can
-
-    -   Create Applications for PCs or Mobile
-
-    -   Have them leverage business objects
-
-    -   Update those business objects in Database or Integration
-
-    -   As a side benefit, you can also invoke a Process from VBCS
-
-**HINT:** When to use the Process tool to create your GUI, and when to use
-        VBCS?
+While Oracle Visual Builder provides a rich set of visual designers to enhance productivity, experienced developers always have access to the source code of their applications. Developers can enhance their application’s functionality using the code editors to write custom JavaScript functions and edit application metadata. Oracle Visual Builder leverages the open source Oracle JavaScript Extension Toolkit (Oracle JET) to create engaging web and mobile interfaces. The reusable Oracle JET Web Component architecture, built based on the Web Component standard, can be added to the application to further enhance the user experience.
 
 ### Visual Builder Application Structure & Settings
 
