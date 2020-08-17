@@ -1,30 +1,13 @@
-# Oracle Integration Cloud Lab1
-## Building a Workflow Application
-
+# Oracle Visual Builder - Basic
+## Understanding the basics of Visual Builder
 
 ### Purpose of the lab
 
+This lab will introduce Oracle Visual Builder, explain the main components and allow you to build your first Visual Builder Web app.
 
+For advanced topics, you can go to the Advanced lab
 
-This lab will show you how to create a process application, use the Process
-WebForm tool to modify GUI forms as well as understand the basics of a process
-flow. It will also allow you to bind your process to an integration in order to
-realize the power of having both Integration and Process in the same solution
-
-The objectives of this lab are to:
-
-1.  Make you more familiar with the basic components of a process application.
-
-2.  Study and understand the features of WebForm, the GUI tool built-in the
-    Process component.
-
-3.  Understand the basics of BPMN.
-
-4.  Understand the concept of QuickStart
-
-5.  Learn how to leverage an integration
-
-### OIC Primer
+### Introducing Oracle Visual Builder
 
 ``this should be monospaced text``
 
@@ -57,3 +40,8 @@ There are essentially three key components in OIC:
 
 **HINT:** When to use the Process tool to create your GUI, and when to use
         VBCS?
+
+### Visual Builder Application Structure & Settings
+
+
+
