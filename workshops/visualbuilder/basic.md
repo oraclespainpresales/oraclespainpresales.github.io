@@ -30,6 +30,8 @@ The objectives of this lab are to:
 
 For those of you completely new to OIC (Oracle Integration Cloud):
 
+Blah blah
+
 There are essentially three key components in OIC:
 
 -   The **Integration**: It allows you to build integrations and connections to
