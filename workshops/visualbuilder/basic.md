@@ -26,6 +26,7 @@ The objectives of this lab are to:
 
 ### OIC Primer
 
+``this should be monospaced text``
 
 For those of you completely new to OIC (Oracle Integration Cloud):
 
