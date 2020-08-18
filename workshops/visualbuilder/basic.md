@@ -113,7 +113,37 @@ Your brand new Oracle Cloud Trial account is ready but you haven't yet created a
 
 13. You're going to create a set of OCI resources (REST service mockups) that will later be used by the VBCS workshop. To make it easier, we provide a `Resource Manager` stack that will provision all those resources automatically using Terraform. In this `Resource Manager` screen, click the _Create Stack_ button
 
-14. blah
+    ![](workshops/visualbuilder/media/20.png)
+
+14. In the next screen, make sure you have selected _MY CONFIGURATION_ option, upload [this ZIP file]() as the _Stack Configuration_ and click _Next_ leaving all other settings as default
+
+    ![](workshops/visualbuilder/media/21.png)
+
+15. Click _Next_ to continue (do not modify the default content for `TENANCY_OCID` and `REGION` variables)
+
+    ![](workshops/visualbuilder/media/22.png)
+
+16. In the `Review`screen click _Create_ to create the _Stack_
+
+17. Once created, open the _Terraform Actions_ menu and click _Plan_ to create a new `Plan` job
+
+    ![](workshops/visualbuilder/media/23.png)
+
+18. Let the job run until it succeeds and then click the _Stack Details_ link to go back to the `Stack` screen
+
+    ![](workshops/visualbuilder/media/24.png)
+
+19. Open the _Terraform Actions_ menu again and now click _Apply_ to apply the stack
+
+    ![](workshops/visualbuilder/media/25.png)
+
+20. Let the new job run until it succeeds and then scroll down to the end of the `Logs` window. You should see X entries named `Path`. Copy and paste all the URLs as those are the mockup REST services that will be used later in the workshop.
+
+    ![](workshops/visualbuilder/media/26.png)
+
+    ![](workshops/visualbuilder/media/27.png)
+
+    You're now ready to start the Labs!
 
 ### Visual Builder Application Structure & Settings
 
