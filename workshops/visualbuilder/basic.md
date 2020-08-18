@@ -53,6 +53,25 @@ Please follow these steps to get your own trial account:
 
 8.	Click the _Sign In to Oracle Cloud_ button to get logged to Oracle Cloud with the username (email used) and password.
 
+### Setting up your new trial account for the Oracle Visual Builder workshop
+
+Your brand new Oracle Cloud Trial account is ready but you haven't yet created all the services/artifacts needed for the workshop. Follow the next steps to get ready:
+
+1.  If not yet logged in, go to the Oracle Cloud console URL: ```https://console.<your region>.oraclecloud.com/``` where <your region> is the home region selected during the trial request in step 4 above. For example:
+
+    | Home Region   | Console URL                                     |
+    | ------------- |-------------------------------------------------|
+    | Frankfurt     | https://console.eu-frankfurt-1.oraclecloud.com/ |
+    | Amsterdam     | https://console.eu-amsterdam-1.oraclecloud.com/ |
+    | London        | https://console.uk-london-1.oraclecloud.com/    |
+
+    For other Home regions check [here](https://docs.cloud.oracle.com/en-us/iaas/Content/GSG/Tasks/signingin.htm)
+
+2.  Make sure you use the Single Sign-On (SSO) option by clicking _Continue_:
+
+    ![](workshops/visualbuilder/media/05.png)
+
+3.  Enter your credentials and click on 
 
 
 
