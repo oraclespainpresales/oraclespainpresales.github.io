@@ -2,7 +2,7 @@
     "workshop": {
         "title": "Oracle Cloud Workshops",
         "description": "Hands-on Labs for Digital Modernization",
-        "theme": "default",
+        "theme": "ttc",
         "labs": [
             {
                 "number": "00",
@@ -16,6 +16,7 @@
                 "title": "Oracle Visual Builder Advanced",
                 "description": "Visual Builder Advanced"
             }
-        ]
+        ],
+        "interactive": "pepe"
     }
 }
