@@ -23,13 +23,43 @@ Oracle offers free trials to try any of our Cloud services (including Visual Bui
 
 Please follow these steps to get your own trial account:
 
-1.  Go to [https://www.oracle.com/cloud/free/](https://www.oracle.com/cloud/free/) and click the *Start for free* button:
+1.  Go to [https://www.oracle.com/cloud/free/](https://www.oracle.com/cloud/free/) and click the _Start for free_ button:
 
     ![](workshops/visualbuilder/media/01.png)
 
 2.	Select your home territory and enter the email address **that you have used to register to this Workshop**, so that you get the 400€ of free Universal Credits:
 
     ![](workshops/visualbuilder/media/02.png)
+
+3.  After clicking _Next_, you **must** get a popup message similar to this one:
+
+    ![](workshops/visualbuilder/media/03.png)
+
+    If you don’t get it, **do not go ahead with the subscription**. Let us know through ZOOM Q&A if you’re live in the session and provide the right email address for us to get it whitelisted and get your training promotion of free Universal Credits.
+
+4.  Enter your personal information in the next form. You can select either Personal or Company use for _Account Type_. Type in your _Cloud Account Name_, which must be unique across all Oracle Cloud. Select your Home Region mainly based on your geographic location. Take into account that trial accounts like this one, will NOT allow you to subscribe to other Oracle Cloud regions (with paid accounts you can subscribe to any region you want, without any additional cost) nor changing it afterwards.
+
+    You may want to review first the Cloud Services available on each one [here](https://www.oracle.com/cloud/data-regions.html) before selecting _Home Region_.
+
+    If you’re located in Europe, we suggest to use Frankfurt, Amsterdam or London.
+
+5.	Enter the password you will use later for Cloud login.
+
+6.	Click on _Review Terms and Conditions and Complete Sign-Up_
+
+7.	Review your email INBOX. You will receive two separate mails. Wait until you receive a message with the subject “**Your Oracle Cloud Account is Fully Provisioned”** as follows:
+
+    ![](workshops/visualbuilder/media/04.png)
+
+8.	Click the _Sign In to Oracle Cloud_ button to get logged to Oracle Cloud with the username (email used) and password.
+
+
+
+
+
+
+
+
 
 
 ### Visual Builder Application Structure & Settings
