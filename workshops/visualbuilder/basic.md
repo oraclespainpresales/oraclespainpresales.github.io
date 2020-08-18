@@ -57,7 +57,7 @@ Please follow these steps to get your own trial account:
 
 Your brand new Oracle Cloud Trial account is ready but you haven't yet created all the services/artifacts needed for the workshop. Follow the next steps to get ready:
 
-1.  If not yet logged in, go to the Oracle Cloud console URL: <n/>https://console.*your region*.oraclecloud.com/ where `your region` is the home region selected during the trial request in step 4 above. For example:
+1.  If not yet logged in, go to the Oracle Cloud console URL: `https://console.your_region.oraclecloud.com/` where `your_region` is the home region selected during the trial request in step 4 above. For example:
 
     | Home Region   | Console URL                                     |
     | ------------- |-------------------------------------------------|
