@@ -25,11 +25,11 @@ Please follow these steps to get your own trial account:
 
 1.  Go to [https://www.oracle.com/cloud/free/](https://www.oracle.com/cloud/free/) and click the *Start for free* button:
 
-![](media/01.png)
+    ![](media/01.png)
 
 2.	Select your home territory and enter the email address **that you have used to register to this Workshop**, so that you get the 400€ of free Universal Credits:
 
-![](media/02.png)
+    ![](media/02.png)
 
 
 ### Visual Builder Application Structure & Settings
