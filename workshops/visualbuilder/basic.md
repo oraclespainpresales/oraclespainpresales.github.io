@@ -157,14 +157,28 @@ You can type any name and its internal ID will be automatically generated as you
 
 ![](workshops/visualbuilder/media/16.png)
 
-After clicking _Finish_ you have your brand new Visual Application ready. A Visual Application mainly contains:
+After clicking _Finish_ you have your brand new Visual Application ready. A Visual Application contains the following components:
+
+![](workshops/visualbuilder/media/29.png)
 
 -   Web Applications: web applications that can be hosted by Visual Builder or downloaded to be hosted on any web server of your choice
 -   Mobile Applications: mobile applications, either PWA (Progressive Web Application) or an iOS and Android native
 -   Service Connections: to consume existing REST endpoints
 -   Business Objects: a resource, similar to a database table. They have fields that may hold the data for your application and are stored in a database
+-   Global Settings: settings shared between all web/mobile applications
 
-![](workshops/visualbuilder/media/28.png)
+The Service Connections, Business Objects (if used) and the Visual Application settings are global and shared within the whole Visual Application.
 
-  
+Similarly, a Web/Mobile application is composed by:
+
+-   Root Pages: the entry point/page of the application. You may have more than one root pages, but only one is "active"
+-   Flows: governs how information is transferred between pages. One or more pages form a page flow. Within a flow, you can set up navigation from page to page
+-   Pages: from a UI perspective, it contains all web components
+-   Javascript: Javascript code that can be called from pages and other components
+-   CSS: stylesheets that can be imported to the app
+-   Images: images that can be imported to the app
+-   i18n: localization settings to make your app multilingual
+-   Settings: application-specific settings
+
+
 
