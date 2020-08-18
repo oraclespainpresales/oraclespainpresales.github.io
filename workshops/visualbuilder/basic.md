@@ -147,5 +147,24 @@ Your brand new Oracle Cloud Trial account is ready but you haven't yet created a
 
 ### Visual Builder Application Structure & Settings
 
+A visual application is a collection of resources that you use to develop web and mobile applications. A visual application includes metadata in JSON files that describe data sources and business objects, and includes the HTML and JavaScript files of the web application.
 
+Once you're logged in Visual Builder console, you can create a new visual application by clicking the _New_ button (top right) or, if no applications have been created yet, click the _+ New Application_ one:
+
+![](workshops/visualbuilder/media/14.png)
+
+You can type any name and its internal ID will be automatically generated as you type. Each visual application must have a unique application ID:
+
+![](workshops/visualbuilder/media/16.png)
+
+After clicking _Finish_ you have your brand new Visual Application ready. A Visual Application mainly contains:
+
+-   Web Applications: web applications that can be hosted by Visual Builder or downloaded to be hosted on any web server of your choice
+-   Mobile Applications: mobile applications, either PWA (Progressive Web Application) or an iOS and Android native
+-   Service Connections: to consume existing REST endpoints
+-   Business Objects: a resource, similar to a database table. They have fields that may hold the data for your application and are stored in a database
+
+![](workshops/visualbuilder/media/28.png)
+
+  
 
