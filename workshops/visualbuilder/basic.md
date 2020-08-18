@@ -59,11 +59,13 @@ Your brand new Oracle Cloud Trial account is ready but you haven't yet created a
 
 1.  If not yet logged in, go to the Oracle Cloud Infrastructure (**OCI**) console URL: `https://console.your_region.oraclecloud.com/` where `your_region` is the home region selected during the trial request in step 4 above. For example:
 
-    | Home Region   | Console URL                                     |
-    | ------------- |-------------------------------------------------|
-    | Frankfurt     | https://console.eu-frankfurt-1.oraclecloud.com/ |
-    | Amsterdam     | https://console.eu-amsterdam-1.oraclecloud.com/ |
-    | London        | https://console.uk-london-1.oraclecloud.com/    |
+<center>
+| Home Region   | Console URL                                     |
+| ------------- |-------------------------------------------------|
+| Frankfurt     | https://console.eu-frankfurt-1.oraclecloud.com/ |
+| Amsterdam     | https://console.eu-amsterdam-1.oraclecloud.com/ |
+| London        | https://console.uk-london-1.oraclecloud.com/    |
+</center>
 
     For other Home regions check [here](https://docs.cloud.oracle.com/en-us/iaas/Content/GSG/Tasks/signingin.htm)
 
@@ -123,7 +125,7 @@ Your brand new Oracle Cloud Trial account is ready but you haven't yet created a
 
     ![](workshops/visualbuilder/media/22.png)
 
-16. In the `Review`screen click _Create_ to create the _Stack_
+16. In the `Review` screen click _Create_ to create the _Stack_
 
 17. Once created, open the _Terraform Actions_ menu and click _Plan_ to create a new `Plan` job
 
@@ -137,7 +139,7 @@ Your brand new Oracle Cloud Trial account is ready but you haven't yet created a
 
     ![](workshops/visualbuilder/media/25.png)
 
-20. Let the new job run until it succeeds and then scroll down to the end of the `Logs` window. You should see X entries named `Path`. Copy and paste all the URLs as those are the mockup REST services that will be used later in the workshop.
+20. Let the new job run until it succeeds and then scroll down to the end of the `Logs` window. You should see X entries started with `Path`. Copy and paste all the URLs as those are the mockup REST services that will be used later in the workshop.
 
     ![](workshops/visualbuilder/media/26.png)
 
