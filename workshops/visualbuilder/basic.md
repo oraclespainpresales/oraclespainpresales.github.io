@@ -47,7 +47,7 @@ Please follow these steps to get your own trial account:
 
 6.	Click on _Review Terms and Conditions and Complete Sign-Up_
 
-7.	Review your email INBOX. You will receive two separate mails. Wait until you receive a message with the subject “**Your Oracle Cloud Account is Fully Provisioned”** as follows:
+7.	Review your email INBOX. You will receive two separate mails. Wait until you receive a message with the subject “**Your Oracle Cloud Account is Fully Provisioned**” as follows:
 
     ![](workshops/visualbuilder/media/04.png)
 
@@ -60,14 +60,15 @@ Your brand new Oracle Cloud Trial account is ready but you haven't yet created a
 1.  If not yet logged in, go to the Oracle Cloud Infrastructure (**OCI**) console URL: `https://console.your_region.oraclecloud.com/` where `your_region` is the home region selected during the trial request in step 4 above. For example:
 
 <center>
-| Home Region   | Console URL                                     |
+| Home Region   | OCI Console URL                                 |
 | ------------- |-------------------------------------------------|
 | Frankfurt     | https://console.eu-frankfurt-1.oraclecloud.com/ |
 | Amsterdam     | https://console.eu-amsterdam-1.oraclecloud.com/ |
 | London        | https://console.uk-london-1.oraclecloud.com/    |
 </center>
 
-    For other Home regions check [here](https://docs.cloud.oracle.com/en-us/iaas/Content/GSG/Tasks/signingin.htm)
+
+    For other Home regions URLs check [here](https://docs.cloud.oracle.com/en-us/iaas/Content/GSG/Tasks/signingin.htm)
 
 2.  Make sure you use the Single Sign-On (SSO) option by clicking _Continue_:
 
