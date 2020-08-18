@@ -2,7 +2,7 @@
     "workshop": {
         "title": "Oracle Cloud Workshops",
         "description": "Hands-on Labs for Digital Modernization",
-        "theme": "ttc",
+        "theme": "default",
         "labs": [
             {
                 "number": "00",
