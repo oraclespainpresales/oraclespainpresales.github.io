@@ -109,9 +109,11 @@ Your brand new Oracle Cloud Trial account is ready but you haven't yet created a
 
 12. Expand the hamburger icon on the top left, scroll down and click on the _Resource Manager_ menu
 
-13. You're going to create a set of OCI resources (service mockups) that will later be used by the VBCS workshop. To make it easier, we provide a `Resource Manager` stack that will provision all those resources automatically using Terraform. In this `Resource Manager` screen, click the _Create Stack_ button
+    ![](workshops/visualbuilder/media/19.png)
 
-14. 
+13. You're going to create a set of OCI resources (REST service mockups) that will later be used by the VBCS workshop. To make it easier, we provide a `Resource Manager` stack that will provision all those resources automatically using Terraform. In this `Resource Manager` screen, click the _Create Stack_ button
+
+14. blah
 
 ### Visual Builder Application Structure & Settings
 
