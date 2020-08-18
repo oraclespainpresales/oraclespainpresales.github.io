@@ -59,13 +59,11 @@ Your brand new Oracle Cloud Trial account is ready but you haven't yet created a
 
 1.  If not yet logged in, go to the Oracle Cloud Infrastructure (**OCI**) console URL: `https://console.your_region.oraclecloud.com/` where `your_region` is the home region selected during the trial request in step 4 above. For example:
 
-<center>
     | Home Region   | OCI Console URL                                 |
     | ------------- |-------------------------------------------------|
     | Frankfurt     | https://console.eu-frankfurt-1.oraclecloud.com/ |
     | Amsterdam     | https://console.eu-amsterdam-1.oraclecloud.com/ |
     | London        | https://console.uk-london-1.oraclecloud.com/    |
-</center>
 
     For other Home regions URLs check [here](https://docs.cloud.oracle.com/en-us/iaas/Content/GSG/Tasks/signingin.htm)
 
