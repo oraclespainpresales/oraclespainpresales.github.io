@@ -9,6 +9,12 @@
                 "filename": "workshops/visualbuilder/basic.md",
                 "title": "Oracle Visual Builder Basic",
                 "description": "Introduction to VBCS and basic concepts"
+            },
+            {
+                "number": "00",
+                "filename": "workshops/visualbuilder/advanced.md",
+                "title": "Oracle Visual Builder Advanced",
+                "description": "Visual Builder Advanced"
             }
         ]
     }
