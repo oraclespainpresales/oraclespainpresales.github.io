@@ -75,15 +75,38 @@ Your brand new Oracle Cloud Trial account is ready but you haven't yet created a
 
     ![](workshops/visualbuilder/media/06.png)
 
-4.  ss
+4.  Click on the _hamburger icon_ on the top left, scroll down and click on the _Platform Services_ menu and then on _Visual Builder_
 
+    ![](workshops/visualbuilder/media/07.png)
 
+5.  On this screen, you can manage all your Visual Builder instances. Although Visual Builder handles versioning and different environments (dev-staging-production), you may want to create different and standalone Visual Builder instances. For now, you need one single instance for this workshop. Click the _Create Instance_ button
 
+    ![](workshops/visualbuilder/media/08.png)
 
+6.  In the next screen, set an instance name and a contact email address (you will receive mails on such address when the instance gets created, deleted, etc). Leave all others fields as-is and click _Next_ to continue
 
+    ![](workshops/visualbuilder/media/09.png)
 
+7.  Click _Create_ to submit the request
 
+    ![](workshops/visualbuilder/media/10.png)
 
+8.  The creation will take about 5 minutes. You can click the refresh button to update the status any time
+
+    ![](workshops/visualbuilder/media/11.png)
+
+9.  Once it gets created, you can click the instance's hamburger menu for the next operations. Click _Start_ or _Stop_ to start or stop the instance. Click _Delete_ to delete it (warning: you will lose all your applications if you haven't exported them in advance!!)
+
+    ![](workshops/visualbuilder/media/12.png)
+
+    ![](workshops/visualbuilder/media/13.png)
+
+#### TIP
+The just created VBCS instance will start to consume Universal Credits from your free trial budget (400€). We **DO RECOMMEND** you to **STOP** the instance while you're not going to work with it. That way, your free budget will last more days (up to one month)
+
+10.  Click the _Open Visual Builder Home Page_ to get to the VBCS main page. **Tip:** bookmark this URL so that you can open it directly any time without needing to go through the Oracle Cloud Infrastruture console menus.
+
+11.  You're now in the VBCS console. Proceed with the next section!
 
 ### Visual Builder Application Structure & Settings
 
