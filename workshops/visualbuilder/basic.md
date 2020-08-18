@@ -71,7 +71,11 @@ Your brand new Oracle Cloud Trial account is ready but you haven't yet created a
 
     ![](workshops/visualbuilder/media/05.png)
 
-3.  Enter your credentials and click on 
+3.  Enter your credentials and click on _Sign In_
+
+    ![](workshops/visualbuilder/media/06.png)
+
+4.  ss
 
 
 
