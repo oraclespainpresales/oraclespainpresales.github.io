@@ -57,7 +57,7 @@ Please follow these steps to get your own trial account:
 
 Your brand new Oracle Cloud Trial account is ready but you haven't yet created all the services/artifacts needed for the workshop. Follow the next steps to get ready:
 
-1.  If not yet logged in, go to the Oracle Cloud console URL: `https://console.your_region.oraclecloud.com/` where `your_region` is the home region selected during the trial request in step 4 above. For example:
+1.  If not yet logged in, go to the Oracle Cloud Infrastructure (**OCI**) console URL: `https://console.your_region.oraclecloud.com/` where `your_region` is the home region selected during the trial request in step 4 above. For example:
 
     | Home Region   | Console URL                                     |
     | ------------- |-------------------------------------------------|
@@ -103,9 +103,15 @@ Your brand new Oracle Cloud Trial account is ready but you haven't yet created a
 
     **TIP:** The just created VBCS instance will start to consume Universal Credits from your free trial budget (400€). We **DO RECOMMEND** you to **STOP** the instance while you're not going to work with it. That way, your free budget will last more days (up to one month)
 
-10.  Click the _Open Visual Builder Home Page_ to get to the VBCS main page. **Tip:** bookmark this URL so that you can open it directly any time without needing to go through the Oracle Cloud Infrastruture console menus.
+10. Click the _Open Visual Builder Home Page_ to get to the VBCS main page. **Tip:** bookmark this URL so that you can open it directly any time without needing to go through the Oracle Cloud Infrastruture console menus.
 
-11.  You're now in the VBCS console. Proceed with the next section!
+11. Before moving on, you still need to create some additional artifacts (helpers) for the workshop. Open the OCI console (for example [https://console.eu-frankfurt-1.oraclecloud.com](https://console.eu-frankfurt-1.oraclecloud.com)) and remember to login using your **SSO account**
+
+12. Expand the hamburger icon on the top left, scroll down and click on the _Resource Manager_ menu
+
+13. You're going to create a set of OCI resources (service mockups) that will later be used by the VBCS workshop. To make it easier, we provide a `Resource Manager` stack that will provision all those resources automatically using Terraform. In this `Resource Manager` screen, click the _Create Stack_ button
+
+14. 
 
 ### Visual Builder Application Structure & Settings
 
