@@ -157,7 +157,9 @@ You can type any name and its internal ID will be automatically generated as you
 
 ![](workshops/visualbuilder/media/16.png)
 
-After clicking _Finish_ you have your brand new Visual Application ready. A Visual Application contains the following components:
+After clicking _Finish_ you have your brand new Visual Application ready.
+
+A Visual Application contains the following components:
 
 ![](workshops/visualbuilder/media/29.png)
 
@@ -179,6 +181,23 @@ Similarly, a Web/Mobile application is composed by:
 -   Images: images that can be imported to the app
 -   i18n: localization settings to make your app multilingual
 -   Settings: application-specific settings
+
+#### Visual Application Global Settings
+
+You can configure settings for a visual application that affect the artifacts within it, while other settings are application-specific. You configure settings for a visual application in the Settings editor by clicking the application hamburger icon (top right) and _Settings_ option:
+
+![](workshops/visualbuilder/media/30.png)
+
+The settings for a visual application are grouped into tabs in the Settings editor:
+
+-   Application: You can configure the value for the Vanity URL property, which is not part of this workshop. See [Specify a Custom App URL](https://docs.oracle.com/en/cloud/paas/app-builder-cloud/visual-builder-developer/specify-custom-url.html#GUID-D7FF0F98-009E-4EF7-87EB-A87D8B60A02D) for more info.
+-   Translations: Download and upload strings that appear in the user interface of your visual applications, for localization purposes. This topic is handled in the Advanced workshop.
+-   Application Profiles: An application profile allows you to deploy your app with different settings depending on the target environment. This topic is handled in the Advanced workshop.
+-   Team: By default, only the application creator user (plus platform administrators) have privileges to see and edit the project. Adding _Team members_ allows you specify additional tenant users to collaborate on the visual application.
+-   User Roles: You can create custom roles to fine-grained control the to business objects and data in your apps. This topic is handled in the Advanced workshop.
+-   Business Objects: Controls the security for the BO API access. You can configure anonymous access, basic authentication, or get an access token that a client can use.
+-   Services: Add or configure connections to a catalog of backend services provided by Oracle, such as Oracle Cloud Applications and Oracle Integration Cloud (OIC) services (Integration and Process). The OIC integration is handled in the Advanced workshop.
+
 
 
 
