@@ -242,9 +242,14 @@ As you can see in the above diagram, you can have Variables/Events/Action Chains
 
 ### Page Designer
 
-When you open a `page` you will get opened the Page Designer, which consists on a Components palette, a Page Structure view, a Page Designer and, when any UI component is selected, the Property Inspector (of such component)
+When you open a `page` you will get opened the Page Designer, which consists on a Components palette, a Page Structure view, a Page Editor and, when any UI component is selected, the Property Inspector (of such component):
 
 ![](workshops/visualbuilder/media/35.png)
+
+Additionaly the Page Designer includes a toolbar with the following options:
+
+![](workshops/visualbuilder/media/36.png)
+
 
 
 
