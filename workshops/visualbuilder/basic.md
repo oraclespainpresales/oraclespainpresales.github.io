@@ -271,7 +271,23 @@ You can mainly set the following parameters (among others):
 
 ### Application Testing and Lifecycle
 
+You have two options to test your Web application:
 
+![](workshops/visualbuilder/media/39.png)
+
+1.  While you have your page opened in the Page Editor canvas, click the `Live` button from the toolbar (top-right). You'll notice the canvas will be now surronded by a green rectangle. That means the canvas is now in _Live Mode_, and you can interact with the UI components as if the application were deployed. Tihs option is very convenient for quick tests in your page.
+    You also have a keyboard shortcut to temporary enable the Live mode: hold the CTRL key (or CMD on Mac)
+2.  Click the _Play_ button on the Visual Application toolbar (top-right). The whole application will be opened in preview mode in a new tab in your browser. You can notice that the app URL includes the version number and the mode (preview)
+
+#### Application Lifecycle
+
+A Visual Application can be easily versioned from the application browser. You'll get to the application browser when you login to Visual Builder or, if you have an application already opened, by clicking the top-left hamburger icon and then click All Applications to close the current one and open the application browser:
+
+![](workshops/visualbuilder/media/40.png)
+
+![](workshops/visualbuilder/media/41.png)
+
+When you create a new application, it'll start with `1.0` version.
 
 
 
