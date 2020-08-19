@@ -145,7 +145,7 @@ Your brand new Oracle Cloud Trial account is ready but you haven't yet created a
 
     You're now ready to start the Labs!
 
-### Visual Builder Application Structure & Settings
+### Visual Application Structure & Settings
 
 A visual application is a collection of resources that you use to develop web and mobile applications. A visual application includes metadata in JSON files that describe data sources and business objects, and includes the HTML and JavaScript files of the web application.
 
@@ -200,7 +200,7 @@ The settings for a visual application are grouped into tabs in the Settings edit
 -   Business Objects: Controls the security for the BO API access. You can configure anonymous access, basic authentication, or get an access token that a client can use.
 -   Services: Add or configure connections to a catalog of backend services provided by Oracle, such as Oracle Cloud Applications and Oracle Integration Cloud (OIC) services (Integration and Process). The OIC integration is handled in the Advanced workshop.
 
-### Visual Builder Web Application Structure
+### Web/Mobile Application Structure
 
 As noted in previous sections, a Web (or mobile) application is composed by a number of elements: flows and pages, _helpers_ like javascript, CSS, or images and its own set of settings
 
@@ -246,13 +246,14 @@ When you open a `page` you will get opened the Page Designer, which consists on 
 
 ![](workshops/visualbuilder/media/35.png)
 
+
 Additionaly the Page Designer includes a toolbar with the following options:
 
 ![](workshops/visualbuilder/media/36.png)
 
+### Web/Mobile Application Specific Settings
 
-
-
+### Application Testing and Lifecycle
 
 
 
