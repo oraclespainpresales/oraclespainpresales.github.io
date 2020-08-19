@@ -212,7 +212,7 @@ When you create a new application, Visual Builder creates a skeleton for you wit
 
 `shell`: the default root page. By default, this will be the _entry point_ to the app and the **container** for the rest of the pages
 `main`: the default page flow. Each page in your application is contained within a flow. You create a flow to group one or more pages that you might want to treat as an independent unit that performs some function in your application
-`main-start`: the default (empty) page, contained in the `shell` root page. You will place your UI components on the _pages_
+`main-start`: the default (empty) page, contained in the `shell` root page. You will place your UI components in the _pages_
 `app.css`: empty CSS file where you can place your own styles
 
 Of course, you can create additional elements by clicking the **+** button on the right of each type of element
@@ -221,6 +221,24 @@ When you click any of the above artifacts, its configuration page tab will be op
 
 ### Variables, Events, Actions and scope of those
 
+The Web/Mobile application, its flows and its pages, have all a set of artifacts that allow you to build the logic of the application:
+
+-   `Variables and Types`: You use variables to store data that can be used by actions and page components in your application. For each variable you must specify a `Type` property to define the type of data that is stored in the variable. You have the usual scalar types (string, number, etc) and you can also crete your own type structures. A variable can have a default value and can also be defined as a `Constant`
+-   `Events`: an Event is a sort-of message that is produced by an artifact and may have zero or many _event listeners_. An _event listener_ will execute some kind of action as the result of the arrival of the subscribed event. There are several types of events in the runtime: page events, flow events, system events, custom or developer-defined system events, component (DOM) events, and variable events
+-   `Action Chains`: An action chain is a sequence of actions that you create to define the behavior of components. Action chains are triggered by events that you add to components and page events, etc
+
+#### Scope
+
+It is important to understand the scope of the Variables, Events and Action Chains in your Visual Builder applications:
+
+![](workshops/visualbuilder/media/34.png)
+
+As you can see in the above diagram, you can have Variables/Events/Action Chains at _Application_, _Flow_ and _Page_ levels. It is pretty obvious to assume the scope of each of those:
+
+-   Artifacts (Variables/Events/actions) defined at `MyWebApplication` level, will be available from everywhere in the application
+-   Artifacts defined at `main-flow` level, will only be accessible from the flow itself and from `page1` and `page2` pages
+-   Artifacts defined at `page1` level, will only be accessible from the `page1` itself
+-   ...and so on and so forth
 
 ### Visual Components
 
