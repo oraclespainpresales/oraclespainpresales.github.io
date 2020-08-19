@@ -235,12 +235,17 @@ It is important to understand the scope of the Variables, Events and Action Chai
 
 As you can see in the above diagram, you can have Variables/Events/Action Chains at _Application_, _Flow_ and _Page_ levels. It is pretty obvious to assume the scope of each of those:
 
--   Artifacts (Variables/Events/actions) defined at `MyWebApplication` level, will be available from everywhere in the application
+-   Artifacts (Variables/Events/Actions) defined at `MyWebApplication` level, will be available from everywhere in the application
 -   Artifacts defined at `main-flow` level, will only be accessible from the flow itself and from `page1` and `page2` pages
 -   Artifacts defined at `page1` level, will only be accessible from the `page1` itself
 -   ...and so on and so forth
 
-### Visual Components
+### Page Designer
+
+When you open a `page` you will get opened the Page Designer, which consists on a Components palette, a Page Structure view, a Page Designer and, when any UI component is selected, the Property Inspector (of such component)
+
+![](workshops/visualbuilder/media/35.png)
+
 
 
 
