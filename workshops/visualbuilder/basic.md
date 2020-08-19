@@ -242,11 +242,11 @@ As you can see in the above diagram, you can have Variables/Events/Action Chains
 
 ### Page Designer
 
-When you open a `page` you will get opened the Page Designer, which consists on a Components palette, a Page Structure view, a Page Editor and, when any UI component is selected, the Property Inspector (of such component):
+When you open a `page` you will get opened the Page Designer, which consists on a **Components Palette**, a **Page Structure** view, a **Page Editor** and, when any UI component is selected, the **Property Inspector** (of such component):
 
 ![](workshops/visualbuilder/media/35.png)
 
-In the Property Inspector you will be able to set the specific properties of the UI component, register any event (e.g.: click on a Button) and set any of the component specific and general HTML attributes:
+In the **Property Inspector** you will be able to set the specific properties of the UI component, register any event (e.g.: click on a _Button_) and set any of the component specific and general HTML attributes:
 
 ![](workshops/visualbuilder/media/37.png)
 
@@ -254,10 +254,20 @@ Additionaly the Page Designer includes a toolbar with the following options:
 
 ![](workshops/visualbuilder/media/36.png)
 
-
-Designing your page is as easy as dragging and dropping the UI components from the _Component Palette_ to the Page Editor's canvas. We will do so during the Hands On Lab later
+Designing your page is as easy as dragging and dropping the UI components from the **Component Palette** to the Page Editor's canvas. We will do so during the Hands On Lab later
 
 ### Web/Mobile Application Specific Settings
+
+Besides the Visual Application general settings, that will affect all the contained Web & Mobile applications, each application has its own settings, only applicable to it. To open such settings tab, simply make sure you have selected the web/mobile application and click on the _gear_ icon:
+
+![](workshops/visualbuilder/media/38.png)
+
+You can mainly set the following parameters (among others):
+
+-   **Default Page**: Should you have multiple Root Pages in your application, select which one is the default one
+-   **Theme**: Should you have a complete CSS file, you can set the app to use such CSS as default
+-   **Allow anonymous access**: By default this setting us unchecked. That means the application will need authentication to open it. Should you want the app to be anonymous (available to everyone without auth), just check this option
+-   **Embedding**: A Visual Application is a regular HTML5 web app. As such, it could be embedded in an external application through the `<iframe>` tag. If you plan to do so, you must first allow it at Visual Builder level
 
 ### Application Testing and Lifecycle
 
