@@ -246,10 +246,16 @@ When you open a `page` you will get opened the Page Designer, which consists on 
 
 ![](workshops/visualbuilder/media/35.png)
 
+In the Property Inspector you will be able to set the specific properties of the UI component, register any event (e.g.: click on a Button) and set any of the component specific and general HTML attributes:
+
+![](workshops/visualbuilder/media/37.png)
 
 Additionaly the Page Designer includes a toolbar with the following options:
 
 ![](workshops/visualbuilder/media/36.png)
+
+
+Designing your page is as easy as dragging and dropping the UI components from the _Component Palette_ to the Page Editor's canvas. We will do so during the Hands On Lab later
 
 ### Web/Mobile Application Specific Settings
 
