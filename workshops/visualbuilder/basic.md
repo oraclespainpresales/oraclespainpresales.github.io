@@ -293,7 +293,7 @@ Each application may have one or multiple versions and three status:
 -   **Staging**: You use the staged application to prepare the application for publication. You can distribute the URI of the staged application to team members who can help you test the behavior of the application, identify where it can be improved and to test your changes. You can re-stage a version as many times as you need.
 -   **Live**: Each time that you are ready to publish a new version of your application you should lock the live version of your application until the new version is published. You cannot make changes to a version of an application after it is published and live. To make additional changes to the application you need to create a new version. The URL of a Live application **does not change from version to version**.
 
-You can change the stage (Development --> Staging and Staging --> Live) from within the application right-hamburger icon in the Application Explorer...
+You can change the stage (**Development** --> **Staging** and **Staging** --> **Live**) from within the application right-hamburger icon in the Application Explorer...
 
 ![](workshops/visualbuilder/media/42.png)
 
