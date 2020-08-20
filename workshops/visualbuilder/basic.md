@@ -315,7 +315,28 @@ However, it adds a way to deploy the app in your mobile device during Staging an
 Mobile applications are not handled in this Basic workshop.
 ```
 
-### Hands On Lab - Step 1: xxxx
 
-### Hands On Lab - Step 2: yyyy
+### Hands On Lab - Step 0: Use Case Description
+
+### Hands On Lab - Step 1: Create the Visual Application 
+
+### Hands On Lab - Step 2: Business Object creation & Data import
+
+### Hands On Lab - Step 3: Service Connections Definition
+
+### Hands On Lab - Step 4: Create the Web Application
+
+### Hands On Lab - Step 5: Add List and retrieve BO data
+
+### Hands On Lab - Step 6: Add filter from external service
+
+### Hands On Lab - Step 7: Include Avatar picture in table
+
+### Hands On Lab - Step 8: Improve data visualization with templates and Javascript
+
+### Hands On Lab - Step 9: 
+
+### Hands On Lab - Step 10: 
+
+
 
