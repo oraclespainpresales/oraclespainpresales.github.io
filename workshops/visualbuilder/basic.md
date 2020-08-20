@@ -275,8 +275,8 @@ You have two options to test your Web application:
 
 ![](workshops/visualbuilder/media/39.png)
 
-1.  While you have your page opened in the Page Editor canvas, click the `Live` button from the toolbar (top-right). You'll notice the canvas will be now surronded by a green rectangle. That means the canvas is now in _Live Mode_, and you can interact with the UI components as if the application were deployed. Tihs option is very convenient for quick tests in your page.
-    You also have a keyboard shortcut to temporary enable the Live mode: hold the CTRL key (or CMD on Mac)
+1.  While you have your page opened in the Page Editor canvas, click the `Live` button from the toolbar (top-right). You'll notice the canvas will be now surronded by a green rectangle. That means the canvas is now in _Live Mode_, and you can interact with the UI components as if the application were deployed. This option is very convenient for quick tests in your page.
+    You also have a keyboard shortcut to temporary enable the _Live Mode_: hold the CTRL key (or CMD on Mac)
 2.  Click the _Play_ button on the Visual Application toolbar (top-right). The whole application will be opened in preview mode in a new tab in your browser. You can notice that the app URL includes the version number and the mode (preview)
 
 #### Application Lifecycle
@@ -305,8 +305,10 @@ To create a new version of an existing application, simply use the _New Version_
 
 ![](workshops/visualbuilder/media/44.png)
 
-You can have as many versions as you want in **Development** and **Staging** stages. However you can only have one Live version at a time.
+You can have as many versions as you want in **Development** and **Staging** stages. However you can only have _one_ **Live** version at a time.
 
 ![](workshops/visualbuilder/media/45.png)
+
+```Note: the Mobile Applications lifecycle is similar to the web ones. However, it adds a way to deploy the app in your mobile device during Stating and Live. Mobile applications are not handled in this Basic workshop.```
 
 ### Hands On Lab
