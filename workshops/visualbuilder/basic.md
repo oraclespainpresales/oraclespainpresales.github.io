@@ -309,6 +309,8 @@ You can have as many versions as you want in **Development** and **Staging** sta
 
 ![](workshops/visualbuilder/media/45.png)
 
-```Note: the Mobile Applications lifecycle is similar to the web ones. However, it adds a way to deploy the app in your mobile device during Stating and Live. Mobile applications are not handled in this Basic workshop.```
+```
+Note: the Mobile Applications lifecycle is similar to the web ones. However, it adds a way to deploy the app in your mobile device during Stating and Live. Mobile applications are not handled in this Basic workshop.
+```
 
 ### Hands On Lab
