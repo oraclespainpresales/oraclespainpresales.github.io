@@ -37,7 +37,7 @@ Please follow these steps to get your own trial account:
 
     If you don’t get it, **do not go ahead with the subscription**. Let us know through ZOOM Q&A if you’re live in the session and provide the right email address for us to get it whitelisted and get your training promotion of free Universal Credits.
 
-4.  Enter your personal information in the next form. You can select either Personal or Company use for _Account Type_. Type in your _Cloud Account Name_, which must be unique across all Oracle Cloud. Select your Home Region mainly based on your geographic location. Take into account that trial accounts like this one, will NOT allow you to subscribe to other Oracle Cloud regions (with paid accounts you can subscribe to any region you want, without any additional cost) nor changing it afterwards.
+4.  Enter your personal information in the next form. You can select either Personal or Company use for _Account Type_. Type in your _Cloud Account Name_, which must be unique across all Oracle Cloud. Select your _Home Region_ mainly based on your geographic location. Take into account that trial accounts like this one, will NOT allow you to subscribe to other Oracle Cloud regions (with paid accounts you can subscribe to any region you want, without any additional cost) nor changing it afterwards.
 
     You may want to review first the Cloud Services available on each one [here](https://www.oracle.com/cloud/data-regions.html) before selecting _Home Region_.
 
@@ -47,7 +47,7 @@ Please follow these steps to get your own trial account:
 
 6.	Click on _Review Terms and Conditions and Complete Sign-Up_
 
-7.	Review your email INBOX. You will receive two separate mails. Wait until you receive a message with the subject “**Your Oracle Cloud Account is Fully Provisioned**” as follows:
+7.	Review your email INBOX. You will receive **two separate** mails. Wait until you receive a message with the subject “**Your Oracle Cloud Account is Fully Provisioned**” as follows:
 
     ![](workshops/visualbuilder/media/04.png)
 
@@ -163,24 +163,24 @@ A Visual Application contains the following components:
 
 ![](workshops/visualbuilder/media/29.png)
 
--   Web Applications: web applications that can be hosted by Visual Builder or downloaded to be hosted on any web server of your choice
--   Mobile Applications: mobile applications, either PWA (Progressive Web Application) or an iOS and Android native
--   Service Connections: to consume existing REST endpoints
--   Business Objects: a resource, similar to a database table. They have fields that may hold the data for your application and are stored in a database
--   Global Settings: settings shared between all web/mobile applications
+-   **Web Applications**: web applications that can be hosted by Visual Builder or downloaded to be hosted on any web server of your choice
+-   **Mobile Applications**: mobile applications, either PWA (Progressive Web Application) or an iOS and Android native
+-   **Service Connections**: to consume existing REST endpoints
+-   **Business Objects**: a resource, similar to a database table. They have fields that may hold the data for your application and are stored in a database
+-   **Global Settings**: settings shared between all web/mobile applications
 
-The Service Connections, Business Objects (if used) and the Visual Application settings are global and shared within the whole Visual Application.
+The **Service Connections**, **Business Objects** (if used) and the Visual Application **Global Settings** are global and shared within the whole Visual Application.
 
 Similarly, a Web/Mobile application is composed by:
 
--   Root Pages: the entry point/page of the application. You may have more than one root pages, but only one is "active"
--   Flows: governs how information is transferred between pages. One or more pages form a page flow. Within a flow, you can set up navigation from page to page
--   Pages: from a UI perspective, it contains all web components
--   Javascript: Javascript code that can be called from pages and other components
--   CSS: stylesheets that can be imported to the app
--   Images: images that can be imported to the app
--   i18n: localization settings to make your app multilingual
--   Settings: application-specific settings
+-   **Root Pages**: the entry point/page of the application. You may have more than one root pages, but only one is "active"
+-   **Flows**: governs how information is transferred between pages. One or more pages form a page flow. Within a flow, you can set up navigation from page to page
+-   **Pages**: from a UI perspective, it contains all web components
+-   **Javascript**: Javascript code that can be called from pages and other components
+-   **CSS**: stylesheets that can be imported to the app
+-   **Images**: images that can be imported to the app
+-   **i18n**: localization settings to make your app multilingual
+-   **Settings**: application-specific settings
 
 #### Visual Application Global Settings
 
@@ -192,13 +192,13 @@ The settings for a visual application are grouped into tabs in the Settings edit
 
 ![](workshops/visualbuilder/media/31.png)
 
--   Application: You can configure the value for the Vanity URL property, which is not part of this workshop. See [Specify a Custom App URL](https://docs.oracle.com/en/cloud/paas/app-builder-cloud/visual-builder-developer/specify-custom-url.html#GUID-D7FF0F98-009E-4EF7-87EB-A87D8B60A02D) for more info.
--   Translations: Download and upload strings that appear in the user interface of your visual applications, for localization purposes. This topic is handled in the Advanced workshop.
--   Application Profiles: An application profile allows you to deploy your app with different settings depending on the target environment. This topic is handled in the Advanced workshop.
--   Team: By default, only the application creator user (plus platform administrators) have privileges to see and edit the project. Adding _Team members_ allows you specify additional tenant users to collaborate on the visual application.
--   User Roles: You can create custom roles to fine-grained control the to business objects and data in your apps. This topic is handled in the Advanced workshop.
--   Business Objects: Controls the security for the BO API access. You can configure anonymous access, basic authentication, or get an access token that a client can use.
--   Services: Add or configure connections to a catalog of backend services provided by Oracle, such as Oracle Cloud Applications and Oracle Integration Cloud (OIC) services (Integration and Process). The OIC integration is handled in the Advanced workshop.
+-   **Application**: You can configure the value for the Vanity URL property, which is not part of this workshop. See [Specify a Custom App URL](https://docs.oracle.com/en/cloud/paas/app-builder-cloud/visual-builder-developer/specify-custom-url.html#GUID-D7FF0F98-009E-4EF7-87EB-A87D8B60A02D) for more info.
+-   **Translations**: Download and upload strings that appear in the user interface of your visual applications, for localization purposes. This topic is handled in the Advanced workshop.
+-   **Application Profiles**: An application profile allows you to deploy your app with different settings depending on the target environment. This topic is handled in the Advanced workshop.
+-   **Team**: By default, only the application creator user (plus platform administrators) have privileges to see and edit the project. Adding _Team members_ allows you specify additional tenant users to collaborate on the visual application.
+-   **User Roles**: You can create custom roles to fine-grained control the to business objects and data in your apps. This topic is handled in the Advanced workshop.
+-   **Business Objects**: Controls the security for the BO API access. You can configure anonymous access, basic authentication, or get an access token that a client can use.
+-   **Services**: Add or configure connections to a catalog of backend services provided by Oracle, such as Oracle Cloud Applications and Oracle Integration Cloud (OIC) services (Integration and Process). The OIC integration is handled in the Advanced workshop.
 
 ### Web/Mobile Application Structure
 
