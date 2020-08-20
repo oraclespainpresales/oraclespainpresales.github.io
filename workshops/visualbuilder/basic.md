@@ -287,7 +287,26 @@ A Visual Application can be easily versioned from the application browser. You'l
 
 ![](workshops/visualbuilder/media/41.png)
 
-When you create a new application, it'll start with `1.0` version.
+Each application may have one or multiple versions and three status:
 
+-   **Development**: In the development stage you design your application by building pages and creating business objects. You also use development versions to update the application to fix any problems revealed while testing the application.
+-   **Staging**: You use the staged application to prepare the application for publication. You can distribute the URI of the staged application to team members who can help you test the behavior of the application, identify where it can be improved and to test your changes. You can re-stage a version as many times as you need.
+-   **Live**: Each time that you are ready to publish a new version of your application you should lock the live version of your application until the new version is published. You cannot make changes to a version of an application after it is published and live. To make additional changes to the application you need to create a new version. The URL of a Live application **does not change from version to version**.
 
+You can change the stage (Development --> Staging and Staging --> Live) from within the application right-hamburger icon in the Application Explorer...
 
+![](workshops/visualbuilder/media/42.png)
+
+or through the opened application top-right hamburger icon
+
+![](workshops/visualbuilder/media/43.png)
+
+To create a new version of an existing application, simply use the _New Version_ option in the hamburger menu of the application while in Application Explorer. You can set any version number as long as doesn't already exist.
+
+![](workshops/visualbuilder/media/44.png)
+
+You can have as many versions as you want in **Development** and **Staging** stages. However you can only have one Live version at a time.
+
+![](workshops/visualbuilder/media/45.png)
+
+### Hands On Lab
