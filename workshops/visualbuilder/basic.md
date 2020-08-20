@@ -217,7 +217,7 @@ When you create a new application, Visual Builder creates a skeleton for you wit
 
 Of course, you can create additional elements by clicking the **+** button on the right of each type of element
 
-When you click any of the above artifacts, its configuration page tab will be open on the right.
+When you click any of the above artifacts, its configuration page tab will be opened on the right.
 
 ### Variables, Events, Actions and scope of those
 
@@ -235,7 +235,7 @@ It is important to understand the scope of the Variables, Events and Action Chai
 
 As you can see in the above diagram, you can have Variables/Events/Action Chains at _Application_, _Flow_ and _Page_ levels. It is pretty obvious to assume the scope of each of those:
 
--   Artifacts (Variables/Events/Actions) defined at `MyWebApplication` level, will be available from everywhere in the application
+-   Artifacts (Variables/Events/Actions) defined at `MyWebApplication` level, will be available from **everywhere** in the application
 -   Artifacts defined at `main-flow` level, will only be accessible from the flow itself and from `page1` and `page2` pages
 -   Artifacts defined at `page1` level, will only be accessible from the `page1` itself
 -   ...and so on and so forth
@@ -264,7 +264,7 @@ Besides the Visual Application general settings, that will affect all the contai
 
 You can mainly set the following parameters (among others):
 
--   **Default Page**: Should you have multiple Root Pages in your application, select which one is the default one
+-   **Default Page**: Should you have multiple Root Pages in your application, select which is the default one
 -   **Theme**: Should you have a complete CSS file, you can set the app to use such CSS as default
 -   **Allow anonymous access**: By default this setting us unchecked. That means the application will need authentication to open it. Should you want the app to be anonymous (available to everyone without auth), just check this option
 -   **Embedding**: A Visual Application is a regular HTML5 web app. As such, it could be embedded in an external application through the `<iframe>` tag. If you plan to do so, you must first allow it at Visual Builder level
@@ -287,7 +287,7 @@ A Visual Application can be easily versioned from the application browser. You'l
 
 ![](workshops/visualbuilder/media/41.png)
 
-Each application may have one or multiple versions and three status:
+Each **application** may have one or multiple versions and **each version** may have three status:
 
 -   **Development**: In the development stage you design your application by building pages and creating business objects. You also use development versions to update the application to fix any problems revealed while testing the application.
 -   **Staging**: You use the staged application to prepare the application for publication. You can distribute the URI of the staged application to team members who can help you test the behavior of the application, identify where it can be improved and to test your changes. You can re-stage a version as many times as you need.
@@ -301,7 +301,7 @@ or through the opened application top-right hamburger icon
 
 ![](workshops/visualbuilder/media/43.png)
 
-To create a new version of an existing application, simply use the _New Version_ option in the hamburger menu of the application while in Application Explorer. You can set any version number as long as doesn't already exist.
+To create a new version of an existing application, simply use the _New Version_ option in the hamburger menu of the application while in **Application Explorer**. You can set any version number as long as doesn't already exist.
 
 ![](workshops/visualbuilder/media/44.png)
 
