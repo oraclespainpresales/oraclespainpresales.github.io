@@ -280,6 +280,7 @@ As you can see in the above diagram, you can have Variables/Events/Action Chains
 -   Artifacts (Variables/Events/Actions) defined at `MyWebApplication` level, will be available from **everywhere** in the application
 -   Artifacts defined at `main-flow` level, will only be accessible from the flow itself and from `page1` and `page2` pages
 -   Artifacts defined at `page1` level, will only be accessible from the `page1` itself
+-   Variables defined at an `Action Chain` level, will only be accessible from such Action Chain
 -   ...and so on and so forth
 
 ### Page Designer
