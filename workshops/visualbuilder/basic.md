@@ -255,7 +255,7 @@ The Web/Mobile application, its flows and its pages, have all a set of artifacts
 
     - _Custom Events_ can be triggered from within the _Action Chains_
 
-    - Lifecycle Events allow users to have the control of the lifecycle of the application, triggering _Action Chains_ when page gets loaded or exited, for example:
+    - _Lifecycle Events_ allow users to have the control of the lifecycle of the application, triggering _Action Chains_ when page gets loaded or exited, for example:
 
     ![](workshops/visualbuilder/media/53.png)
 
