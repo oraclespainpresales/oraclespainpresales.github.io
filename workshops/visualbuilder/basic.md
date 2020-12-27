@@ -360,6 +360,35 @@ However, it adds a way to deploy the app in your mobile device during Staging an
 Mobile applications are not handled in this Basic workshop.
 ```
 
+### Business Objects
+
+A business object is a resource similar to a database table; it has fields that hold the data for your application. Like a database table, a business object provides the structure for data. Business objects are stored in a database. The apps in your visual application and other clients access the business objects via their REST endpoints.
+
+The Business Objects pane in the Navigator lists all the business objects that are available for use in your application:
+
+![](workshops/visualbuilder/media/56.png)
+
+When you create a new Business Object, you're actually creating a regular database table. As such, it will contain _columns_ (a.k.a. _fields_). There are some Fields pre-created by Visual Builder, and you can add your own:
+
+![](workshops/visualbuilder/media/57.png)
+
+![](workshops/visualbuilder/media/58.png)
+
+Each field has its own set of properties, than can be set based on your needs:
+
+![](workshops/visualbuilder/media/59.png)
+
+You can setup fine-grained security access to each Business Object in the _Security_ section. Here, you can, for example, enable the access to the data from _Anonymous applications_, specify content-based rules on the CRUD methods, etc:
+
+![](workshops/visualbuilder/media/60.png)
+
+Whenever a Business Object is created, a set of RESTful APIs are made available for perform CRUD operations on it. The APIs URLs and methods are provided on this screen:
+
+![](workshops/visualbuilder/media/61.png)
+
+Finally, you can access the Business Object contents to manually create, edit or remove rows on it. You can also export and import data in CSV format:
+
+![](workshops/visualbuilder/media/62.png)
 
 ### Hands On Lab - Step 0: Use Case Description
 
