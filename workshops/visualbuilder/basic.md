@@ -225,13 +225,21 @@ The Web/Mobile application, its flows and its pages, have all a set of artifacts
 
 -   `Variables and Types`: You use variables to store data that can be used by actions and page components in your application. For each variable you must specify a `Type` property to define the type of data that is stored in the variable. You have the usual scalar types (string, number, etc) and you can also crete your own type structures. A variable can have a default value and can also be defined as a `Constant`
 
-    - You can define a `Type` as a JSON object or as an Array, and then define its attributes:
+    - You can define a `Type` as a JSON object or as an Array, and then specify its attributes:
     
     ![](workshops/visualbuilder/media/46.png)
     
     - You can also create a type based on an existing REST endpoint, very convinient when you need to map the input or output of a call:
 
     ![](workshops/visualbuilder/media/47.png)
+
+    - Variables can be of type scalar (_any_, Array, Boolean, Number, Object or String), of an existing `Type` or of a Data Provider. You can also specify it as a regular variable or as a constant:
+
+    ![](workshops/visualbuilder/media/48.png)
+
+    - Once a variables has been created, there are some other attributes than can be set on it, such as defining it as an _Input Parameter_, set a _Default Value_ or set a persisting policy. You can also link an _Action Chain_ to the variable so that whenever it gets updated, the Action Chain flow gets triggered:
+
+    ![](workshops/visualbuilder/media/49.png)
 
 -   `Events`: an Event is a sort-of message that is produced by an artifact and may have zero or many _event listeners_. An _event listener_ will execute some kind of action as the result of the arrival of the subscribed event. There are several types of events in the runtime: page events, flow events, system events, custom or developer-defined system events, component (DOM) events, and variable events
 -   `Action Chains`: An action chain is a sequence of actions that you create to define the behavior of components. Action chains are triggered by events that you add to components and page events, etc
