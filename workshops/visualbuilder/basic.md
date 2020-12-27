@@ -261,6 +261,14 @@ The Web/Mobile application, its flows and its pages, have all a set of artifacts
 
 -   `Action Chains`: An action chain is a sequence of actions that you create to define the behavior of components. Action chains are triggered by events that you add to components and page events, etc
 
+    - Building the flow of an _Action Chain_ is extremely easy and 100% visual. There are many activities available, including those for flow logic, navigation and also to integrate with Oracle Integration Process:
+
+    ![](workshops/visualbuilder/media/54.png)
+
+    - Each _Action Chain_ activity has its own set of properties to be configured:
+
+    ![](workshops/visualbuilder/media/55.png)
+
 #### Scope
 
 It is important to understand the scope of the Variables, Events and Action Chains in your Visual Builder applications:
