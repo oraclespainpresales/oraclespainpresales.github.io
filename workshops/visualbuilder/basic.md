@@ -242,6 +242,23 @@ The Web/Mobile application, its flows and its pages, have all a set of artifacts
     ![](workshops/visualbuilder/media/49.png)
 
 -   `Events`: an Event is a sort-of message that is produced by an artifact and may have zero or many _event listeners_. An _event listener_ will execute some kind of action as the result of the arrival of the subscribed event. There are several types of events in the runtime: page events, flow events, system events, custom or developer-defined system events, component (DOM) events, and variable events
+
+    - You can specify multiple event listeners and link one or more _Action Chains_ to each event:
+
+    ![](workshops/visualbuilder/media/52.png)
+
+    - You can create your own _Custom Events_ and set input parameters if needed:
+
+    ![](workshops/visualbuilder/media/50.png)
+
+    ![](workshops/visualbuilder/media/51.png)
+
+    - _Custom Events_ can be triggered from within the _Action Chains_
+
+    - Lifecycle Events allow users to have the control of the lifecycle of the application, triggering _Action Chains_ when page gets loaded or exited, for example:
+
+    ![](workshops/visualbuilder/media/53.png)
+
 -   `Action Chains`: An action chain is a sequence of actions that you create to define the behavior of components. Action chains are triggered by events that you add to components and page events, etc
 
 #### Scope
