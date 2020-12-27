@@ -105,39 +105,41 @@ Your brand new Oracle Cloud Trial account is ready but you haven't yet created a
 
 10. Click the _Open Visual Builder Home Page_ to get to the VBCS main page. **Tip:** bookmark this URL so that you can open it directly any time without needing to go through the Oracle Cloud Infrastruture console menus.
 
-11. Before moving on, you still need to create some additional artifacts (helpers) for the workshop. Open the OCI console (for example [https://console.eu-frankfurt-1.oraclecloud.com](https://console.eu-frankfurt-1.oraclecloud.com)) and remember to login using your **SSO account**
+### Install additional artifacts
 
-12. Expand the hamburger icon on the top left, scroll down and click on the _Resource Manager_ menu
+1. Before moving on, you still need to create some additional artifacts (helpers) for the workshop. Open the OCI console (for example [https://console.eu-frankfurt-1.oraclecloud.com](https://console.eu-frankfurt-1.oraclecloud.com)) and remember to login using your **SSO account**
+
+2. Expand the hamburger icon on the top left, scroll down and click on the _Resource Manager_ menu
 
     ![](workshops/visualbuilder/media/19.png)
 
-13. You're going to create a set of OCI resources (REST service mockups) that will later be used by the VBCS workshop. To make it easier, we provide a `Resource Manager` stack that will provision all those resources automatically using Terraform. In this `Resource Manager` screen, click the _Create Stack_ button
+3. You're going to create a set of OCI resources (REST service mockups) that will later be used by the VBCS workshop. To make it easier, we provide a `Resource Manager` stack that will provision all those resources automatically using Terraform. In this `Resource Manager` screen, click the _Create Stack_ button
 
     ![](workshops/visualbuilder/media/20.png)
 
-14. In the next screen, make sure you have selected _MY CONFIGURATION_ option, upload [this ZIP file]() as the _Stack Configuration_ and click _Next_ leaving all other settings as default
+4. In the next screen, make sure you have selected _MY CONFIGURATION_ option, upload [this ZIP file]() as the _Stack Configuration_ and click _Next_ leaving all other settings as default
 
     ![](workshops/visualbuilder/media/21.png)
 
-15. Click _Next_ to continue (do not modify the default content for `TENANCY_OCID` and `REGION` variables)
+5. Click _Next_ to continue (do not modify the default content for `TENANCY_OCID` and `REGION` variables)
 
     ![](workshops/visualbuilder/media/22.png)
 
-16. In the `Review` screen click _Create_ to create the _Stack_
+6. In the `Review` screen click _Create_ to create the _Stack_
 
-17. Once created, open the _Terraform Actions_ menu and click _Plan_ to create a new `Plan` job
+7. Once created, open the _Terraform Actions_ menu and click _Plan_ to create a new `Plan` job
 
     ![](workshops/visualbuilder/media/23.png)
 
-18. Let the job run until it succeeds and then click the _Stack Details_ link to go back to the `Stack` screen
+8. Let the job run until it succeeds and then click the _Stack Details_ link to go back to the `Stack` screen
 
     ![](workshops/visualbuilder/media/24.png)
 
-19. Open the _Terraform Actions_ menu again and now click _Apply_ to apply the stack
+9. Open the _Terraform Actions_ menu again and now click _Apply_ to apply the stack
 
     ![](workshops/visualbuilder/media/25.png)
 
-20. Let the new job run until it succeeds and then scroll down to the end of the `Logs` window. You should see X entries started with `Path`. Copy and paste all the URLs as those are the mockup REST services that will be used later in the workshop.
+10. Let the new job run until it succeeds and then scroll down to the end of the `Logs` window. You should see X entries started with `Path`. Copy and paste all the URLs as those are the mockup REST services that will be used later in the workshop.
 
     ![](workshops/visualbuilder/media/26.png)
 
@@ -310,7 +312,7 @@ You can mainly set the following parameters (among others):
 -   **Default Page**: Should you have multiple Root Pages in your application, select which is the default one
 -   **Theme**: Should you have a complete CSS file, you can set the app to use such CSS as default
 -   **Allow anonymous access**: By default this setting us unchecked. That means the application will need authentication to open it. Should you want the app to be anonymous (available to everyone without auth), just check this option
--   **Embedding**: A Visual Application is a regular HTML5 web app. As such, it could be embedded in an external application through the `<iframe>` tag. If you plan to do so, you must first allow it at Visual Builder level
+-   **Embedding**: A Visual Application is a regular HTML5 web app. As such, it could be embedded in an external application through the `<iframe>` or `embed` tags. If you plan to do so, you must first allow it at Visual Builder level
 
 ### Application Testing and Lifecycle
 
