@@ -400,7 +400,9 @@ You soon realize that Oracle Visual Builder perfectly fits on these requirements
 
 Login to your VBCS instance and click the `+ New Application` button, should you don't have any app created yet, or the `New` button on the top right otherwise:
 
-![](workshops/visualbuilder/media/63.png)   ![](workshops/visualbuilder/media/64.png)
+![](workshops/visualbuilder/media/63.png)
+
+![](workshops/visualbuilder/media/64.png)
 
 Enter _Deal Reviewer_ as the `Application Name` and click `Finish`:
 
@@ -408,7 +410,39 @@ Enter _Deal Reviewer_ as the `Application Name` and click `Finish`:
 
 ### Hands On Lab - Step 2: Business Object creation & Data import
 
+On the left palette, click the `Business Objects` icon:
+
+![](workshops/visualbuilder/media/66.png)
+
+We're going to create the `DEALS` Business Object directly from the provided CSV file. Click the hamburger icon and click the `Data Manager` link:
+
+![](workshops/visualbuilder/media/67.png)
+
+In the Data Manager menu, click the `Import Business Objects` option and import the `deals.csv` file:
+
+![](workshops/visualbuilder/media/68.png)
+
+![](workshops/visualbuilder/media/69.png)
+
+Click `Next` twice and then `Finish`, leaving all options as default:
+
+![](workshops/visualbuilder/media/70.png)
+
+![](workshops/visualbuilder/media/71.png)
+
+Once finished, click `Close`:
+
+![](workshops/visualbuilder/media/72.png)
+
+Click on the just created _Deals_ Business Object on the left to review it:
+
+![](workshops/visualbuilder/media/73.png)
+
+Check the `Fields` and the `Data`
+
 ### Hands On Lab - Step 3: Service Connections Definition
+
+
 
 ### Hands On Lab - Step 4: Create the Web Application
 
