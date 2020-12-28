@@ -398,7 +398,14 @@ You soon realize that Oracle Visual Builder perfectly fits on these requirements
 
 ### Hands On Lab - Step 1: Create the Visual Application 
 
-Login to your VBCS instance and click Create
+Login to your VBCS instance and click the `+ New Application` button, should you don't have any app created yet, or the `New` button on the top right otherwise:
+
+    ![](workshops/visualbuilder/media/63.png)   ![](workshops/visualbuilder/media/64.png)
+
+Enter _Deal Reviewer_ as the `Application Name` and click `Finish`:
+
+    ![](workshops/visualbuilder/media/65.png)
+
 
 ### Hands On Lab - Step 2: Business Object creation & Data import
 
