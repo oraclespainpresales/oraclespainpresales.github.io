@@ -1,0 +1,201 @@
+repName,repSurname,dealDate,customer,dealAmount,status
+Leslie,Downer,2019-11-02,Lear,69000.0,BOOKED
+Lyla,Willard,2019-06-15,Cummins,91000.0,BOOKED
+Kathryn,Weaver,2019-04-29,Genuine Parts,92000.0,PENDING
+Kathryn,Weaver,2019-11-04,AutoNation,85000.0,CLOSED
+Garey,Davison,2019-02-01,Netflix,65000.0,PENDING
+Fredric,Dyer,2019-07-04,Abbott Laboratories,70000.0,PENDING
+Conor,Evelyn,2019-06-08,Nationwide,56000.0,BOOKED
+Felix,Pemberton,2019-03-26,PepsiCo,99000.0,PENDING
+Arlo,Norris,2019-07-19,HCA Healthcare,82000.0,PENDING
+Basil,Lincoln,2019-12-17,Facebook,64000.0,CLOSED
+Hayden,Greene,2019-03-20,Netflix,62000.0,CLOSED
+Kathryn,Weaver,2019-04-20,U.S. Bancorp,68000.0,PENDING
+Deanna,Warren,2019-06-24,PayPal Holdings,87000.0,PENDING
+Felix,Pemberton,2019-08-05,Rite Aid,78000.0,CLOSED
+Carlton,Ryley,2019-06-16,Apple,96000.0,CLOSED
+Garey,Davison,2019-06-13,StoneX,83000.0,PENDING
+Felix,Pemberton,2019-03-10,Facebook,93000.0,BOOKED
+Carlton,Ryley,2019-12-04,HP,89000.0,BOOKED
+Leslie,Downer,2019-11-10,AutoNation,68000.0,PENDING
+Harlan,Garnier,2019-12-12,Synchrony Financial,92000.0,CLOSED
+Arlo,Norris,2019-12-17,Charter Communications,92000.0,PENDING
+Deanna,Warren,2019-06-19,Kohl's,53000.0,BOOKED
+Darlene,Clement,2019-05-16,Duke Energy,62000.0,BOOKED
+Cortney,Barnet,2019-03-13,Freddie Mac,89000.0,PENDING
+Kathryn,Weaver,2019-06-14,CDW,100000.0,CLOSED
+Conor,Evelyn,2019-06-24,Danaher,80000.0,CLOSED
+Cortney,Barnet,2019-05-14,General Motors,82000.0,PENDING
+Basil,Lincoln,2019-01-26,WestRock,96000.0,BOOKED
+Arlo,Norris,2019-02-17,Danaher,99000.0,CLOSED
+Keegan,Peter,2019-01-05,Dollar General,89000.0,BOOKED
+Harlan,Garnier,2019-11-22,Fluor,72000.0,CLOSED
+Kathryn,Weaver,2019-02-18,Mondelez International,71000.0,CLOSED
+Alexandria,Sharp,2019-07-02,Macy's,64000.0,PENDING
+Keegan,Peter,2019-01-08,Raytheon,80000.0,CLOSED
+Kathryn,Weaver,2019-11-24,New York Life Insurance,100000.0,CLOSED
+Conor,Evelyn,2019-10-06,Eli Lilly,92000.0,CLOSED
+Cortney,Barnet,2019-01-14,Pfizer,61000.0,BOOKED
+Fredric,Dyer,2019-12-10,Gap,54000.0,CLOSED
+Deanna,Warren,2019-07-09,Gilead Sciences,78000.0,BOOKED
+Alexandria,Sharp,2019-10-16,HP,96000.0,PENDING
+Darlene,Clement,2019-09-10,Home Depot,58000.0,CLOSED
+Leslie,Downer,2019-10-20,PayPal Holdings,63000.0,CLOSED
+Deanna,Warren,2019-07-15,Phillips 66,54000.0,CLOSED
+Leslie,Downer,2019-06-13,Union Pacific,71000.0,PENDING
+Deanna,Warren,2019-06-30,World Fuel Services,67000.0,PENDING
+Conor,Evelyn,2019-03-15,Microsoft,88000.0,CLOSED
+Carlton,Ryley,2019-09-11,Dow,58000.0,BOOKED
+Fredric,Dyer,2019-02-18,Western Digital,76000.0,PENDING
+Carlton,Ryley,2019-08-09,Tyson Foods,83000.0,PENDING
+Kathryn,Weaver,2019-01-24,Kroger,58000.0,BOOKED
+Julian,Hall,2019-04-27,Dow,63000.0,PENDING
+Nyla,Frank,2019-04-11,Tech Data,68000.0,CLOSED
+Nyla,Frank,2019-07-06,Marriott International,65000.0,CLOSED
+Kathryn,Weaver,2019-10-21,HCA Healthcare,68000.0,PENDING
+Keegan,Peter,2019-07-01,Walgreens Boots Alliance,64000.0,BOOKED
+Arlo,Norris,2019-05-24,Cisco Systems,100000.0,PENDING
+Basil,Lincoln,2019-04-01,Archer Daniels Midland,59000.0,BOOKED
+Garey,Davison,2019-08-29,Paccar,70000.0,CLOSED
+Leslie,Downer,2019-03-31,Target,96000.0,BOOKED
+Cortney,Barnet,2019-08-24,Progressive,53000.0,CLOSED
+Keegan,Peter,2019-09-28,Cisco Systems,65000.0,BOOKED
+Summer,Peck,2019-12-09,Comcast,80000.0,CLOSED
+Leslie,Downer,2019-02-03,Boeing,87000.0,CLOSED
+Leslie,Downer,2019-09-06,American Airlines Group,82000.0,PENDING
+Garey,Davison,2019-07-30,Avnet,98000.0,CLOSED
+Keegan,Peter,2019-03-12,NGL Energy Partners,84000.0,PENDING
+Conor,Evelyn,2019-01-16,Charter Communications,67000.0,CLOSED
+Alexandria,Sharp,2019-12-17,Lowe's,65000.0,BOOKED
+Conor,Evelyn,2019-05-06,United Natural Foods,54000.0,BOOKED
+Conor,Evelyn,2019-12-02,Comcast,78000.0,CLOSED
+Kathryn,Weaver,2019-08-24,General Electric,80000.0,PENDING
+Garey,Davison,2019-01-04,Qualcomm,58000.0,CLOSED
+Harlan,Garnier,2019-05-16,Citigroup,82000.0,CLOSED
+Keegan,Peter,2019-08-25,Publix Super Markets,74000.0,PENDING
+Cortney,Barnet,2019-07-27,Valero Energy,98000.0,BOOKED
+Garey,Davison,2019-02-27,US Foods Holding,62000.0,PENDING
+Nyla,Frank,2019-07-17,Amazon.com,58000.0,BOOKED
+Leslie,Downer,2019-07-01,Ford Motor,85000.0,BOOKED
+Leslie,Downer,2019-04-13,Bristol-Myers Squibb,90000.0,PENDING
+Julian,Hall,2019-02-28,ConocoPhillips,50000.0,CLOSED
+Garey,Davison,2019-01-31,D.R. Horton,54000.0,CLOSED
+Summer,Peck,2019-02-23,Capital One Financial,86000.0,PENDING
+Harlan,Garnier,2019-07-04,Synchrony Financial,54000.0,CLOSED
+Keegan,Peter,2019-01-15,Whirlpool,74000.0,PENDING
+Felix,Pemberton,2019-01-27,Tenet Healthcare,62000.0,BOOKED
+Conor,Evelyn,2019-08-12,Tenet Healthcare,79000.0,PENDING
+Keegan,Peter,2019-06-11,Micron Technology,83000.0,CLOSED
+Deanna,Warren,2019-10-17,Qualcomm,95000.0,CLOSED
+Summer,Peck,2019-07-02,Performance Food Group,92000.0,BOOKED
+Arlo,Norris,2019-04-12,Kraft Heinz,50000.0,CLOSED
+Summer,Peck,2019-03-21,Marathon Petroleum,52000.0,PENDING
+Garey,Davison,2019-03-30,Bank of New York Mellon,57000.0,PENDING
+Cortney,Barnet,2019-04-05,Honeywell International,80000.0,PENDING
+Darlene,Clement,2019-09-02,PBF Energy,81000.0,CLOSED
+Conor,Evelyn,2019-02-13,NGL Energy Partners,88000.0,BOOKED
+Deanna,Warren,2019-11-30,Cigna,96000.0,CLOSED
+Garey,Davison,2019-11-08,Emerson Electric,51000.0,BOOKED
+Carlton,Ryley,2019-05-15,CenturyLink,86000.0,CLOSED
+Lyla,Willard,2019-11-12,United Natural Foods,89000.0,BOOKED
+Kathryn,Weaver,2019-11-02,Penske Automotive Group,61000.0,BOOKED
+Julian,Hall,2019-01-20,United Parcel Service,62000.0,BOOKED
+Kathryn,Weaver,2019-08-05,Kohl's,82000.0,CLOSED
+Leslie,Downer,2019-10-19,Johnson & Johnson,81000.0,PENDING
+Deanna,Warren,2019-03-15,Comcast,61000.0,CLOSED
+Leslie,Downer,2019-01-07,AmerisourceBergen,58000.0,PENDING
+Leslie,Downer,2019-10-04,Massachusetts Mutual Life Insurance,70000.0,PENDING
+Conor,Evelyn,2019-07-08,Abbott Laboratories,81000.0,PENDING
+Keegan,Peter,2019-05-28,Visa,85000.0,CLOSED
+Darlene,Clement,2019-01-17,Gap,58000.0,BOOKED
+Harlan,Garnier,2019-01-07,Avnet,67000.0,PENDING
+Alexandria,Sharp,2019-01-29,Gilead Sciences,53000.0,PENDING
+Hayden,Greene,2019-09-03,Humana,93000.0,CLOSED
+Lyla,Willard,2019-11-27,Philip Morris International,90000.0,PENDING
+Leslie,Downer,2019-11-20,Kimberly-Clark,82000.0,BOOKED
+Hayden,Greene,2019-03-26,Western Digital,81000.0,PENDING
+Leslie,Downer,2019-06-17,Broadcom,95000.0,BOOKED
+Summer,Peck,2019-07-15,Coca-Cola,87000.0,PENDING
+Leslie,Downer,2019-05-24,ConocoPhillips,65000.0,PENDING
+Leslie,Downer,2019-07-13,American International Group,53000.0,PENDING
+Conor,Evelyn,2019-11-12,Lincoln National,56000.0,PENDING
+Nyla,Frank,2019-05-13,Archer Daniels Midland,58000.0,CLOSED
+Felix,Pemberton,2019-06-21,Exxon Mobil,82000.0,BOOKED
+Darlene,Clement,2019-09-07,Home Depot,59000.0,BOOKED
+Felix,Pemberton,2019-04-15,Merck,55000.0,BOOKED
+Leslie,Downer,2019-04-29,Western Digital,74000.0,CLOSED
+Darlene,Clement,2019-04-10,WestRock,81000.0,CLOSED
+Nyla,Frank,2019-07-01,Apple,65000.0,PENDING
+Lyla,Willard,2019-12-15,Arrow Electronics,74000.0,BOOKED
+Garey,Davison,2019-09-13,Cigna,63000.0,PENDING
+Garey,Davison,2019-12-22,Plains GP Holdings,55000.0,CLOSED
+Summer,Peck,2019-03-13,Cardinal Health,92000.0,CLOSED
+Basil,Lincoln,2019-02-19,Fluor,54000.0,CLOSED
+Alexandria,Sharp,2019-11-08,Amgen,65000.0,BOOKED
+Garey,Davison,2019-04-21,Centene,63000.0,CLOSED
+Cortney,Barnet,2019-08-19,Duke Energy,59000.0,PENDING
+Basil,Lincoln,2019-08-09,CDW,57000.0,PENDING
+Harlan,Garnier,2019-03-29,DuPont,60000.0,PENDING
+Conor,Evelyn,2019-08-18,Ford Motor,61000.0,PENDING
+Summer,Peck,2019-03-16,IBM,54000.0,CLOSED
+Nyla,Frank,2019-07-30,Hewlett Packard Enterprise,73000.0,BOOKED
+Darlene,Clement,2019-06-27,DXC Technology,57000.0,BOOKED
+Basil,Lincoln,2019-12-10,Tenneco,74000.0,BOOKED
+Garey,Davison,2019-08-29,Lincoln National,94000.0,PENDING
+Hayden,Greene,2019-10-21,Micron Technology,62000.0,PENDING
+Alexandria,Sharp,2019-03-23,AmerisourceBergen,81000.0,CLOSED
+Arlo,Norris,2019-09-22,ManpowerGroup,82000.0,PENDING
+Nyla,Frank,2019-11-26,Aflac,61000.0,PENDING
+Garey,Davison,2019-06-04,Northwestern Mutual,67000.0,CLOSED
+Fredric,Dyer,2019-02-21,MetLife,99000.0,CLOSED
+Alexandria,Sharp,2019-01-07,Centene,54000.0,BOOKED
+Keegan,Peter,2019-05-29,ManpowerGroup,59000.0,BOOKED
+Harlan,Garnier,2019-06-04,Synnex,53000.0,BOOKED
+Keegan,Peter,2019-04-01,AbbVie,74000.0,CLOSED
+Julian,Hall,2019-11-09,CenturyLink,91000.0,BOOKED
+Kathryn,Weaver,2019-01-28,Lockheed Martin,88000.0,BOOKED
+Deanna,Warren,2019-08-27,NextEra Energy,72000.0,PENDING
+Darlene,Clement,2019-09-27,ManpowerGroup,81000.0,PENDING
+Lyla,Willard,2019-10-26,CBRE Group,63000.0,PENDING
+Harlan,Garnier,2019-02-12,Apple,94000.0,CLOSED
+Kathryn,Weaver,2019-01-08,Honeywell International,84000.0,CLOSED
+Cortney,Barnet,2019-05-24,Target,69000.0,CLOSED
+Carlton,Ryley,2019-08-11,Valero Energy,67000.0,CLOSED
+Summer,Peck,2019-04-03,Ford Motor,82000.0,CLOSED
+Keegan,Peter,2019-08-07,DXC Technology,76000.0,CLOSED
+Fredric,Dyer,2019-11-11,General Motors,89000.0,PENDING
+Felix,Pemberton,2019-07-08,PG&E,64000.0,PENDING
+Alexandria,Sharp,2019-05-21,Berkshire Hathaway,95000.0,BOOKED
+Summer,Peck,2019-02-21,Capital One Financial,91000.0,BOOKED
+Cortney,Barnet,2019-01-26,Raytheon,88000.0,BOOKED
+Alexandria,Sharp,2019-08-02,Arrow Electronics,92000.0,PENDING
+Cortney,Barnet,2019-08-27,Southwest Airlines,71000.0,BOOKED
+Garey,Davison,2019-12-28,Berkshire Hathaway,73000.0,CLOSED
+Julian,Hall,2019-03-26,Aramark,92000.0,BOOKED
+Cortney,Barnet,2019-12-05,Abbott Laboratories,86000.0,PENDING
+Cortney,Barnet,2019-01-22,Whirlpool,94000.0,CLOSED
+Alexandria,Sharp,2019-02-04,Intel,83000.0,CLOSED
+Nyla,Frank,2019-04-09,American International Group,63000.0,BOOKED
+Hayden,Greene,2019-11-17,American Express,59000.0,CLOSED
+Lyla,Willard,2019-07-22,CHS,73000.0,BOOKED
+Carlton,Ryley,2019-08-31,Bank of America,74000.0,BOOKED
+Nyla,Frank,2019-12-20,Dollar Tree,62000.0,BOOKED
+Kathryn,Weaver,2019-06-20,Marathon Petroleum,86000.0,PENDING
+Basil,Lincoln,2019-06-03,HCA Healthcare,85000.0,BOOKED
+Arlo,Norris,2019-05-26,Dollar General,97000.0,BOOKED
+Darlene,Clement,2019-10-26,Cisco Systems,56000.0,PENDING
+Darlene,Clement,2019-12-20,Progressive,87000.0,CLOSED
+Deanna,Warren,2019-07-02,Kroger,53000.0,PENDING
+Summer,Peck,2019-01-17,Whirlpool,74000.0,CLOSED
+Carlton,Ryley,2019-11-08,McKesson,59000.0,BOOKED
+Felix,Pemberton,2019-06-23,New York Life Insurance,82000.0,BOOKED
+Deanna,Warren,2019-10-11,Cardinal Health,86000.0,CLOSED
+Carlton,Ryley,2019-04-22,Liberty Mutual Insurance Group,93000.0,PENDING
+Summer,Peck,2019-11-20,AmerisourceBergen,50000.0,CLOSED
+Conor,Evelyn,2019-10-13,PNC Financial Services Group,79000.0,BOOKED
+Darlene,Clement,2019-03-24,Morgan Stanley,64000.0,CLOSED
+Julian,Hall,2019-04-30,Northwestern Mutual,75000.0,BOOKED
+Hayden,Greene,2019-02-21,Caterpillar,53000.0,PENDING
+Cortney,Barnet,2019-03-06,ViacomCBS,97000.0,PENDING
+Keegan,Peter,2019-08-24,Caterpillar,66000.0,BOOKED
+Alexandria,Sharp,2019-04-15,UnitedHealth Group,51000.0,CLOSED

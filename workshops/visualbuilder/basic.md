@@ -392,6 +392,10 @@ Finally, you can access the Business Object contents to manually create, edit or
 
 ### Hands On Lab - Step 0: Use Case Description
 
+You're a developer in ACME, a leading company, and the business users have requested a web application to review the deals during the year 2019. The data is currently contained in a CSV file (download). They want to see all deals in a table-like list, with information about the sales representative of each deal and also its status. Posibility to filter the deals based on such status is also a requirement.
+
+You soon realize that Oracle Visual Builder perfectly fits on these requirements to build such web application.
+
 ### Hands On Lab - Step 1: Create the Visual Application 
 
 ### Hands On Lab - Step 2: Business Object creation & Data import
@@ -400,7 +404,7 @@ Finally, you can access the Business Object contents to manually create, edit or
 
 ### Hands On Lab - Step 4: Create the Web Application
 
-### Hands On Lab - Step 5: Add List and retrieve BO data
+### Hands On Lab - Step 5: Add List Component and retrieve BO data
 
 ### Hands On Lab - Step 6: Add filter from external service
 
