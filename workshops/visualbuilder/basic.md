@@ -117,7 +117,7 @@ Your brand new Oracle Cloud Trial account is ready but you haven't yet created a
 
     ![](workshops/visualbuilder/media/20.png)
 
-4. In the next screen, make sure you have selected _MY CONFIGURATION_ option, upload [this ZIP file]() as the _Stack Configuration_ and click _Next_ leaving all other settings as default
+4. In the next screen, make sure you have selected _MY CONFIGURATION_ option, upload [this ZIP file](https://github.com/oraclespainpresales/oraclespainpresales.github.io/raw/master/workshops/visualbuilder/artifacts/apigw.zip) as the _Stack Configuration_ and click _Next_ leaving all other settings as default
 
     ![](workshops/visualbuilder/media/21.png)
 
@@ -392,11 +392,13 @@ Finally, you can access the Business Object contents to manually create, edit or
 
 ### Hands On Lab - Step 0: Use Case Description
 
-You're a developer in ACME, a leading company, and the business users have requested a web application to review the deals during the year 2019. The data is currently contained in a CSV file (download). They want to see all deals in a table-like list, with information about the sales representative of each deal and also its status. Posibility to filter the deals based on such status is also a requirement.
+You're a developer in ACME, a leading company, and the business users have requested a web application to review the deals during the year 2019. The data is currently contained in a CSV file ([download](https://github.com/oraclespainpresales/oraclespainpresales.github.io/raw/master/workshops/visualbuilder/artifacts/deals.csv)). They want to see all deals in a table-like list, with information about the sales representative of each deal and also its status. Posibility to filter the deals based on such status is also a requirement.
 
 You soon realize that Oracle Visual Builder perfectly fits on these requirements to build such web application.
 
 ### Hands On Lab - Step 1: Create the Visual Application 
+
+Login to your VBCS instance and click Create
 
 ### Hands On Lab - Step 2: Business Object creation & Data import
 
