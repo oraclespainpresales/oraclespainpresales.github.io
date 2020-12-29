@@ -472,7 +472,7 @@ On the left menu, click the _Web Applications_ button and then click _+ Web Appl
 
 ![](workshops/visualbuilder/media/78.png)
 
-Type `DealsReviewerApp`as the _Application Name_, leave the _Navigation Style_ as `None` and click _Create_:
+Type `DealsReviewerApp` as the _Application Name_, leave the _Navigation Style_ as `None` and click _Create_:
 
 ![](workshops/visualbuilder/media/79.png)
 
@@ -486,15 +486,75 @@ Review the artifacts created by VBCS: one `main` flow with a `main-start` web pa
 
 ### Hands On Lab - Step 5: Add List Component and retrieve BO data
 
-### Hands On Lab - Step 6: Add filter from external service
+To display the deal information, we're going to use a `List` component.
 
-### Hands On Lab - Step 7: Include Avatar picture in table
+In the `Components` tab, scroll down until the `Collection` section and drag & drop the `List View` component into the canvas:
 
-### Hands On Lab - Step 8: Improve data visualization with templates and Javascript
+![](workshops/visualbuilder/media/82.png)
 
-### Hands On Lab - Step 9: 
+![](workshops/visualbuilder/media/83.png)
+
+Once added, you can review the page structure and hierarchy of the different components you keep adding. When you add a new component, you can drag & drop it to the canvas or to the structure tree to position it exactly where you want:
+
+![](workshops/visualbuilder/media/84.png)
+
+You can also view (and edit!) the HTML source code of the page by clicking the `Code` button:
+
+![](workshops/visualbuilder/media/85.png)
+
+Click the `Design` button to go back to thw WYSIWYG view. Expand (if needed) the `Properties` section and click the `List View` component in the Structure section to display the List component properties:
+
+![](workshops/visualbuilder/media/86.png)
+
+When just dropped, the List View component displays some dummy data just to show you how it will be rendered. However, no data is yet linked to the component. We will get that using the DEALS Business Object created in the previous sections. You will see how easy is to set a _data source_ to a component in VBCS.
+
+With the `List View` component selected, click the _Quick Start_ property tab. For certain components, such as Tables, List Views, Dropdown and others, VBCS provides a set of wizards to specify the component data source and easily create CRUD pages. Click the Add Data option to set our `List View` component's data source:
+
+![](workshops/visualbuilder/media/87.png)
+
+In the opened wizard, we can select any of the **already registered** available data sources, either a Business Object or an external service. Select the `Deals` Business Object and click _Next_:
+
+![](workshops/visualbuilder/media/88.png)
+
+From the two available templates, select the one on the left and click _Next_:
+
+![](workshops/visualbuilder/media/89.png)
+
+You can now bind the different payload attributes from the RESTful call response, to specific template spots bu dragging & dropping the field onto the spot. Do it as follows:
+
+1. (leave it empty)
+2. `repName` and `repSurname`
+3. `dealAmount` (set its type as _Currency_)
+4. `customer`
+5. `dealDate` (set its type as _Input Date_)
+
+Also, drag & drop the field `status` in the _Include in row data_ box on the right. Then click _Next_:
+
+![](workshops/visualbuilder/media/90.png)
+
+On the last step of the wizard you can set a generic filter, sorting and other parameters in the Data Source, but we'll leave this as-is. Just click _Finish_:
+
+![](workshops/visualbuilder/media/91.png)
+
+You now can see how after setting the List View's data source, the data is refreshed in real-time even in the design page, based on the bindings you have just specified in the wizard:
+
+![](workshops/visualbuilder/media/91.png)
+
+### Hands On Lab - Step 6: Test what you have done so far
+
+Although you see the life data during design time, let's bring the Preview feature of VBCS.
+
+Whenever you want during the development of an application
+
+### Hands On Lab - Step 7: Add filter from external service
+
+### Hands On Lab - Step 8: Include Avatar picture in table
+
+### Hands On Lab - Step 9: Improve data visualization with templates and Javascript
 
 ### Hands On Lab - Step 10: 
+
+### Hands On Lab - Step 11: 
 
 
 
