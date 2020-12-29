@@ -634,7 +634,7 @@ Let's going to provide a better format to the deal date, too. Click on the _Inpu
 In the _General_ tab, set the following settings:
 
 -   _Converter_: `Pattern`
--   _Pattern_: dd-MMM-yyyy
+-   _Pattern_: `dd-MMM-yyyy`
 
 ![](workshops/visualbuilder/media/113.png)
 
