@@ -524,7 +524,7 @@ You can now bind the different payload attributes from the RESTful call response
 
 1.  (leave it empty)
 2.  `repName` and `repSurname`
-3.  `dealAmount` (set its type as _Currency_)
+3.  `dealAmount`
 4.  `customer`
 5.  `dealDate` (set its type as _Input Date_)
 
@@ -596,9 +596,49 @@ Now, the list looks much better!
 
 ![](workshops/visualbuilder/media/100.png)
 
-### Hands On Lab - Step 8: Improve data visualization with your own CSS styles
+### Hands On Lab - Step 8: Improve data visualization with templates and your own CSS styles
 
-To demonstrate how we can use our own CSS styles in VBCS, let's highlight the deal's _Company name_ (`customer` field) using an own CSS class.
+You can see how the _deal amount_ number is not properly formatted as currency. We're going to change the existing format of the deal amount with an _Input Number_ component.
+
+Drag & drop an _Input Number_ component from the palette **inside** the `<> div@value1` element in the Structure View:
+
+![](workshops/visualbuilder/media/107.png)
+
+You can now remove the previous `Bind Text` component by right-clicking on it and clicking on _Delete_:
+
+![](workshops/visualbuilder/media/108.png)
+
+And now let's set the data binding and format for the new component. Click on the _Input Number_ element and in the _Data_ tab of its properties click on the _fx_ icon of the _Value_ field:
+
+![](workshops/visualbuilder/media/109.png)
+
+In the Expression Editor, drag & drop the `dealAmount` variable to the edit window and click _Save_ when done:
+
+![](workshops/visualbuilder/media/110.png)
+
+In the _General_ tab, set the following settings:
+
+-   _Readonly_: `checked`
+-   _Currency Display_: `$`
+-   _Currency Format_: `Short`
+-   _Maximum Fraction Digits_: `0`
+
+Now the deal amount will be displayed in a better way:
+
+![](workshops/visualbuilder/media/111.png)
+
+Let's going to provide a better format to the deal date, too. Click on the _Input Date_ element either in the Structure View or in the canvas:
+
+![](workshops/visualbuilder/media/112.png)
+
+In the _General_ tab, set the following settings:
+
+-   _Converter_: `Pattern`
+-   _Pattern_: dd-MMM-yyyy
+
+![](workshops/visualbuilder/media/113.png)
+
+Finally, to demonstrate how we can use our own CSS styles in VBCS, let's highlight the deal's _Company name_ (`customer` field) using an own CSS class.
 
 First, open the `app.css` file under the `Resources/css` folder:
 
@@ -636,6 +676,12 @@ If you are not yet a believer, open the source code of the page and see what you
 This is pure HTML5+CSS stuff in a LowCode way!
 
 ### Hands On Lab - Step 9: Add filter from external service
+
+If you remember, the business users would like to filter the list based on the status of the opportunity.
+
+First, we're not yet displaying the opportunity status in the list, so let's do so.
+
+
 
 ### Hands On Lab - Step 10: 
 
