@@ -558,7 +558,7 @@ First, download this [file](https://github.com/oraclespainpresales/oraclespainpr
 
 ![](workshops/visualbuilder/media/93.png)
 
-Select or drag & drop the previously downloaded `avatar.zip` file and click _Import_. VBCS will unzip the contents automatically:
+Select or drag & drop the previously downloaded `avatars.zip` file and click _Import_. VBCS will unzip the contents automatically:
 
 ![](workshops/visualbuilder/media/94.png)
 
@@ -570,15 +570,15 @@ With all avatars already imported in the app, let's add the avatar image in the 
 
 To do so, simply locate the _Avatar_ component in the palette, and drag & drop it on top of the `List View` component either in the Structure view or in the canvas.
 
-**IMPORTANT**: make sure you drop the component in the _image slot_. First drag the _Avatar_ component over the `List item` until the slot popup appears; then, without yet dropping it, move the _Avatar_ component to the _image_ slot:
+**IMPORTANT**: make sure you drop the component in the _image slot_. First drag the _Avatar_ component over the `List item` until the slots popup appears; then, without yet dropping it, move the _Avatar_ component to the _image_ slot:
 
 ![](workshops/visualbuilder/media/96.png)
 
 However, you still see a black square. Let's bind the _data_ (source) of the new avatar component to the right picture.
 
-If you reviewed the uploaded images, you probable have noticed each image filename corresponds to a `NameSurname.jpg` pattern. No need to say that the connatenation of the `repName` and `repSurname` fields plus `.jpg` will make the trick!
+If you reviewed the uploaded images, you probably have noticed each image filename corresponds to a `NameSurname.jpg` pattern. No need to say that the concatenation of the `repName` and `repSurname` fields plus `.jpg` will make the trick!
 
-So, select the avatar component in the Structure view (or select the black square in the canvas) to open its properties section. Go to the _Data_ tab and click the _Src_ field's Expression Editor (`fx` icon):
+So, select the avatar component in the Structure view (or select the black square in the canvas) to open its properties section. Go to the _Data_ tab and click the _Src_ field's Expression Editor (`fx` button):
 
 ![](workshops/visualbuilder/media/97.png)
 
@@ -592,11 +592,44 @@ Finally, go to the _General_ tab and set the _Size_ to `Extra Small`:
 
 ![](workshops/visualbuilder/media/99.png)
 
-Now, the list already looks much better!
+Now, the list looks much better!
 
 ![](workshops/visualbuilder/media/100.png)
 
-### Hands On Lab - Step 8: Improve data visualization with CSS
+### Hands On Lab - Step 8: Improve data visualization with your own CSS styles
+
+To demonstrate how we can use our own CSS styles in VBCS, let's highlight the deal's _Company name_ (`customer` field) using an own CSS class.
+
+First, open the `app.css` file under the `Resources/css` folder:
+
+![](workshops/visualbuilder/media/101.png)
+
+The file should be empty. Type in the following code:
+
+```
+.company {
+  color: red;
+  font-size: 20px;
+}
+```
+
+that defines the CSS class `company` with specific font size and color.
+
+![](workshops/visualbuilder/media/102.png)
+
+Now, let's make use of the new class. In the _Structure View_, select the `<> div@title2` component in the hierarchy tree:
+
+![](workshops/visualbuilder/media/103.png)
+
+and type `company` in the _Class_ field in the properties panel:
+
+![](workshops/visualbuilder/media/104.png)
+
+You will immediately see how the Company name is highlighted in red with a bigger font size, as the `company` class dictates. If you are not yet a believer, open the source code of the page and see what you're really doing:
+
+![](workshops/visualbuilder/media/105.png)
+
+This is pure HTML5+CSS stuff in a LowCode way!
 
 ### Hands On Lab - Step 9: Add filter from external service
 
