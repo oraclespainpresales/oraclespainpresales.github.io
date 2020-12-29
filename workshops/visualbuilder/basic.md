@@ -625,9 +625,13 @@ and type `company` in the _Class_ field in the properties panel:
 
 ![](workshops/visualbuilder/media/104.png)
 
-You will immediately see how the Company name is highlighted in red with a bigger font size, as the `company` class dictates. If you are not yet a believer, open the source code of the page and see what you're really doing:
+You will immediately see how the Company name is highlighted in red with a bigger font size, as the `company` class dictates:
 
 ![](workshops/visualbuilder/media/105.png)
+
+If you are not yet a believer, open the source code of the page and see what you're really doing:
+
+![](workshops/visualbuilder/media/106.png)
 
 This is pure HTML5+CSS stuff in a LowCode way!
 
