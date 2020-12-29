@@ -145,7 +145,7 @@ Your brand new Oracle Cloud Trial account is ready but you haven't yet created a
 
     ![](workshops/visualbuilder/media/27.png)
 
-    You can now continue reading the basics of Visual Builder in the next sections, or go straight to start the [Hands On Lab](#hands-on-lab---step-0-use-case-description)!
+    You can now continue reading the basics of Visual Builder in the next sections, or go straight to start the Hands On Lab!
 
 ### Visual Application Structure & Settings
 
@@ -442,7 +442,27 @@ Check the `Fields` and the `Data`
 
 ### Hands On Lab - Step 3: Service Connections Definition
 
+Business Users have requested to be able to filter the deals based on the _Deal status_. To do so we need to know what the possible status options are. For that, we have been given a RESTful external service that will return those.
 
+Such RESTful external service is actually the _artifact_ deployed at the beginning of the Lab through the OCI Resource Manager feature. In order for VBCS applications to invoke external service, we must first register those. All registered services will be available to all web & mobile applications in the VBCS project.
+
+Click the _Service Connections_ icon on the left menu and then click the _+ Service Connection_ button:
+
+![](workshops/visualbuilder/media/74.png)
+
+Select the _Define by Endpoint_ source:
+
+![](workshops/visualbuilder/media/75.png)
+
+In the next screen paste the URL you previously copied when creating the _Resource Manager_ artifact and click _Next_:
+
+![](workshops/visualbuilder/media/76.png)
+
+The next wizard step shows all the service details. To complete the setup, we must first let VBCS know the JSON payload that will be returned by the service. Click the _Test_ tab, click the _Send_ button to send a request to the service, and once completed you will see the returned JSON body. Click the _Save as Example Response_ and _Create_ to finish the service creation:
+
+![](workshops/visualbuilder/media/77.png)
+
+You are now ready to start building the Web Application!
 
 ### Hands On Lab - Step 4: Create the Web Application
 
