@@ -594,6 +594,8 @@ Finally, go to the _General_ tab and set the _Size_ to `Extra Small`:
 
 Now, the list already looks much better!
 
+![](workshops/visualbuilder/media/100.png)
+
 ### Hands On Lab - Step 8: Improve data visualization with CSS
 
 ### Hands On Lab - Step 9: Add filter from external service
