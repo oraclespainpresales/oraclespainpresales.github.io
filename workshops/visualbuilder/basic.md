@@ -502,13 +502,13 @@ You can also view (and edit!) the HTML source code of the page by clicking the `
 
 ![](workshops/visualbuilder/media/85.png)
 
-Click the `Design` button to go back to thw WYSIWYG view. Expand (if needed) the `Properties` section and click the `List View` component in the Structure section to display the List component properties:
+Click the `Design` button to go back to the WYSIWYG view. Expand (if needed) the `Properties` section and click the `List View` component in the Structure section to display the List component properties:
 
 ![](workshops/visualbuilder/media/86.png)
 
 When just dropped, the List View component displays some dummy data just to show you how it will be rendered. However, no data is yet linked to the component. We will get that using the DEALS Business Object created in the previous sections. You will see how easy is to set a _data source_ to a component in VBCS.
 
-With the `List View` component selected, click the _Quick Start_ property tab. For certain components, such as Tables, List Views, Dropdown and others, VBCS provides a set of wizards to specify the component data source and easily create CRUD pages. Click the Add Data option to set our `List View` component's data source:
+With the `List View` component selected, click the _Quick Start_ property tab. For certain components, such as Tables, List Views, Dropdown and others, VBCS provides a set of wizards to specify the component data source and easily create CRUD pages. Click the _Add Data_ option to set our `List View` component's data source:
 
 ![](workshops/visualbuilder/media/87.png)
 
@@ -520,13 +520,13 @@ From the two available templates, select the one on the left and click _Next_:
 
 ![](workshops/visualbuilder/media/89.png)
 
-You can now bind the different payload attributes from the RESTful call response, to specific template spots bu dragging & dropping the field onto the spot. Do it as follows:
+You can now bind the different payload attributes from the RESTful call response, to specific template spots by dragging & dropping the field onto the spot. Do it as follows:
 
-1. (leave it empty)
-2. `repName` and `repSurname`
-3. `dealAmount` (set its type as _Currency_)
-4. `customer`
-5. `dealDate` (set its type as _Input Date_)
+1.  (leave it empty)
+2.  `repName` and `repSurname`
+3.  `dealAmount` (set its type as _Currency_)
+4.  `customer`
+5.  `dealDate` (set its type as _Input Date_)
 
 Also, drag & drop the field `status` in the _Include in row data_ box on the right. Then click _Next_:
 
@@ -538,13 +538,15 @@ On the last step of the wizard you can set a generic filter, sorting and other p
 
 You now can see how after setting the List View's data source, the data is refreshed in real-time even in the design page, based on the bindings you have just specified in the wizard:
 
-![](workshops/visualbuilder/media/91.png)
+![](workshops/visualbuilder/media/92.png)
 
 ### Hands On Lab - Step 6: Test what you have done so far
 
 Although you see the life data during design time, let's bring the Preview feature of VBCS.
 
-Whenever you want during the development of an application
+Whenever you want during the development of an application, as explained before in the _Application Testing and Lifecycle_ section, you can click the `Live` button from the toolbar or click the _Play_ button on the Visual Application toolbar (top-right).
+
+Do so and review what you have done so far.
 
 ### Hands On Lab - Step 7: Add filter from external service
 
