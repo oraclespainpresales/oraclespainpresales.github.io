@@ -117,11 +117,11 @@ Your brand new Oracle Cloud Trial account is ready but you haven't yet created a
 
     ![](workshops/visualbuilder/media/20.png)
 
-4. In the next screen, make sure you have selected _MY CONFIGURATION_ option, upload [this ZIP file](https://github.com/oraclespainpresales/oraclespainpresales.github.io/raw/master/workshops/visualbuilder/artifacts/apigw.zip) as the _Stack Configuration_ and click _Next_ leaving all other settings as default
+4. In the next screen, make sure you have selected _MY CONFIGURATION_ option and _.ZIP FILE_ as the TERRAFORM CONFIGURATION SOURCE. Upload [this ZIP file](https://github.com/oraclespainpresales/oraclespainpresales.github.io/raw/master/workshops/visualbuilder/artifacts/apigw.zip) as the _Stack Configuration_ and click _Next_ leaving all other settings as default
 
     ![](workshops/visualbuilder/media/21.png)
 
-5. Click _Next_ to continue (do not modify the default content for `TENANCY_OCID` and `REGION` variables)
+5. Click _Next_ to continue (**do not modify the default content for `TENANCY_OCID` and `REGION` variables**)
 
     ![](workshops/visualbuilder/media/22.png)
 
@@ -139,13 +139,13 @@ Your brand new Oracle Cloud Trial account is ready but you haven't yet created a
 
     ![](workshops/visualbuilder/media/25.png)
 
-10. Let the new job run until it succeeds and then scroll down to the end of the `Logs` window. You should see X entries started with `Path`. Copy and paste all the URLs as those are the mockup REST services that will be used later in the workshop.
+10. Let the new job run until it succeeds and then scroll down to the end of the `Logs` window. You should see a `Deployed_Routes` log entry with one `Path`. Copy and paste the URL as that service will be used later in the workshop.
 
     ![](workshops/visualbuilder/media/26.png)
 
     ![](workshops/visualbuilder/media/27.png)
 
-    You're now ready to start the Labs!
+    You can now continue reading the basics of Visual Builder in the next sections, or go straight to start the [Hands On Lab](#hands-on-lab---step-0-use-case-description)!
 
 ### Visual Application Structure & Settings
 
