@@ -145,7 +145,9 @@ Your brand new Oracle Cloud Trial account is ready but you haven't yet created a
 
     ![](workshops/visualbuilder/media/27.png)
 
-    You can now continue reading the basics of Visual Builder in the next sections, or go straight to start the Hands On Lab!
+    If you're curious, you can open the URL in a browser to see the response.
+
+You can now continue reading the basics of Visual Builder in the next sections, or go straight to start the Hands On Lab!
 
 ### Visual Application Structure & Settings
 
@@ -442,7 +444,7 @@ Check the `Fields` and the `Data`
 
 ### Hands On Lab - Step 3: Service Connections Definition
 
-Business Users have requested to be able to filter the deals based on the _Deal status_. To do so we need to know what the possible status options are. For that, we have been given a RESTful external service that will return those.
+Business Users have requested to be able to filter the deals based on the _Deal status_. To do so we need to know what the possible status options are. For that purpose, we have been given a RESTful external service that will return those.
 
 Such RESTful external service is actually the _artifact_ deployed at the beginning of the Lab through the OCI Resource Manager feature. In order for VBCS applications to invoke external service, we must first register those. All registered services will be available to all web & mobile applications in the VBCS project.
 
@@ -465,6 +467,22 @@ The next wizard step shows all the service details. To complete the setup, we mu
 You are now ready to start building the Web Application!
 
 ### Hands On Lab - Step 4: Create the Web Application
+
+On the left menu, click the _Web Applications_ button and then click _+ Web Application_:
+
+![](workshops/visualbuilder/media/78.png)
+
+Type `DealsReviewerApp`as the _Application Name_, leave the _Navigation Style_ as `None` and click _Create_:
+
+![](workshops/visualbuilder/media/79.png)
+
+Review the artifacts created by VBCS: one `main` flow with a `main-start` web page. All embeded by the `shell` root page:
+
+![](workshops/visualbuilder/media/80.png)
+
+`Hint: you can hide/show the sections by clicking the section button when selected to make more room for other sections on the screen:`
+
+![](workshops/visualbuilder/media/81.png)
 
 ### Hands On Lab - Step 5: Add List Component and retrieve BO data
 
