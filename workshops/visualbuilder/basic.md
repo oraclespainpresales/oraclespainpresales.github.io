@@ -544,15 +544,59 @@ You now can see how after setting the List View's data source, the data is refre
 
 Although you see the life data during design time, let's bring the Preview feature of VBCS.
 
-Whenever you want during the development of an application, as explained before in the _Application Testing and Lifecycle_ section, you can click the `Live` button from the toolbar or click the _Play_ button on the Visual Application toolbar (top-right).
+Whenever you want during the development of an application, as explained before in the _Application Testing and Lifecycle_ section, you can click the _Live_ button from the toolbar or click the _Play_ button on the Visual Application toolbar (top-right).
+
+![](workshops/visualbuilder/media/39.png)
 
 Do so and review what you have done so far.
 
-### Hands On Lab - Step 7: Add filter from external service
+### Hands On Lab - Step 7: Include Avatar picture in table
 
-### Hands On Lab - Step 8: Include Avatar picture in table
+It'd be nice to add an actual picture of the sales rep of each deal entry on the table. We can do so very easily following the next steps.
 
-### Hands On Lab - Step 9: Improve data visualization with templates and Javascript
+First, download this [file](https://github.com/oraclespainpresales/oraclespainpresales.github.io/raw/master/workshops/visualbuilder/artifacts/avatars.zip) to your desktop. Then, in the Application Structure view, open the _Resources_ folder and right-click in the _images_ subfolder to finally click the _Import_ menu:
+
+![](workshops/visualbuilder/media/93.png)
+
+Select or drag & drop the previously downloaded `avatar.zip` file and click _Import_. VBCS will unzip the contents automatically:
+
+![](workshops/visualbuilder/media/94.png)
+
+You can see all images imported if you expand the _images_ folder:
+
+![](workshops/visualbuilder/media/95.png)
+
+With all avatars already imported in the app, let's add the avatar image in the existing List View component.
+
+To do so, simply locate the _Avatar_ component in the palette, and drag & drop it on top of the `List View` component either in the Structure view or in the canvas.
+
+**IMPORTANT**: make sure you drop the component in the _image slot_. First drag the _Avatar_ component over the `List item` until the slot popup appears; then, without yet dropping it, move the _Avatar_ component to the _image_ slot:
+
+![](workshops/visualbuilder/media/96.png)
+
+However, you still see a black square. Let's bind the _data_ (source) of the new avatar component to the right picture.
+
+If you reviewed the uploaded images, you probable have noticed each image filename corresponds to a `NameSurname.jpg` pattern. No need to say that the connatenation of the `repName` and `repSurname` fields plus `.jpg` will make the trick!
+
+So, select the avatar component in the Structure view (or select the black square in the canvas) to open its properties section. Go to the _Data_ tab and click the _Src_ field's Expression Editor (`fx` icon):
+
+![](workshops/visualbuilder/media/97.png)
+
+type the following value:
+
+`$application.path + 'resources/images/' + $current.data.repName + $current.data.repSurname + '.jpg'`
+
+![](workshops/visualbuilder/media/98.png)
+
+Finally, go to the _General_ tab and set the _Size_ to `Extra Small`:
+
+![](workshops/visualbuilder/media/99.png)
+
+Now, the list already looks much better!
+
+### Hands On Lab - Step 8: Improve data visualization with CSS
+
+### Hands On Lab - Step 9: Add filter from external service
 
 ### Hands On Lab - Step 10: 
 
