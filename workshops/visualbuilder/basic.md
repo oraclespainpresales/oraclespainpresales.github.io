@@ -681,11 +681,82 @@ If you remember, the business users would like to filter the list based on the s
 
 First, we're not yet displaying the opportunity status in the list, so let's do so.
 
+Drag & drop a _Text_ component **inside** the `<> div@value1` element:
 
+![](workshops/visualbuilder/media/114.png)
 
-### Hands On Lab - Step 10: 
+You will see that the _Text_ component has been placed just below the deal amount field but not yet bind to any data source (its default content is `Bind Text`):
 
-### Hands On Lab - Step 11: 
+![](workshops/visualbuilder/media/115.png)
 
+Click the new element either in the Structure View or in the canvas and, in the Properties View, click the _fx_ button of the _Value_ field. As done before, drag & drop the `status` field (don't forget to clear the existing `Bind Text`value before the drag & drop).
 
+We can see now each opportunity status as part of the data displayed in the List View:
 
+![](workshops/visualbuilder/media/116.png)
+
+Time to provide the requested filter feature. We can use the typical HTML Dropdown component to select which deal status we're filtering by, and then apply such filter on the data. The HTML Dropdown component is available in VBCS as _Select (Single)_ UI component.
+
+Let's first add the _Select (Single)_ component to our design. Drag & drop it inside the existing _Grid Row_ and just above the _List View_:
+
+![](workshops/visualbuilder/media/117.png)
+
+![](workshops/visualbuilder/media/118.png)
+
+If you placed the component in the wrong position, you can always _Undo_ the operation or simply delete it and try again.
+
+You can see that the layout is not what you'd like, as the Dropdown component should be on the top. To fix this, let's first to change the container of the List View from the existing _Grid_ type to _Flex_ (the flex container is a flexible container which is useful for responsive designs that optimize the use of the available space)
+
+Click the _Grid Row_ element and in the Properties View change the type from `Grid` to `Flex` and the direction to `Vertical`:
+
+![](workshops/visualbuilder/media/119.png)
+
+![](workshops/visualbuilder/media/120.png)
+
+Now select the new _Single Select_ element, change the _Label Hint_ to `Filter by Opportunity Status`.
+
+Go to the _Quick Start_ tab to set the element's Data Source. Click the _Add Options_ option and select the only endpoint available as a Service Connection as follows, and then click _Next_:
+
+![](workshops/visualbuilder/media/121.png)
+
+In the next wizard screen, drag & drop the `code` attribute to the `Value` box, and the `name` attribute to the `Label` box and click _Next_:
+
+![](workshops/visualbuilder/media/122.png)
+
+Click _Finish_ to end with the wizard. You can test what you've just done if you change to _Live_ mode (or hold the CTRL / CMD key) and simply expand the dropdown.
+
+We have successfully fed the dropdown component with an external service, but we still need to store the selected value somewhere.
+
+Go to the element's _Data_ tab. After setting the binding with the wizard, some values have been automatically set. But you can see the _Value_ field is empty. In here is where we will bind a variable to hold the selected value of the dropdown component.
+
+There's no variable yet for that, but VBCS allows us to create one from the menu. Just click the ▼ icon in the _Value_ field and click the _Create Variable_ link (whether to create the variebl in the Page, Flow or Application scope, it depends on you and where you would be using such variable somewhere else in the application; in this case, we recommend to create a Page variable):
+
+![](workshops/visualbuilder/media/123.png)
+
+Just name it `filter`, for example, of type _String_.
+
+Now, we still need to apply the filter to the data retrieved from the Business Object.
+
+Go to the page's _Variables_ tab and click the `dealsListSDP` variable.
+
+_This variable, is of type Service Data Provided. It was automatically created when we run the List View Quick Start wizard and handles the requests to the Business Object to gather the data_
+
+In the Property View, there are a number of optional input parameters that can be set to control the number of records returned, apply queries or filters, etc. In our case, we're going to set a filter criteria based on the `filter` variable.
+
+Click on the _Assign_ link for _Parameters_:
+
+![](workshops/visualbuilder/media/124.png)
+
+Click on the `filterCriterion` parameter. We will use the editor _Builder_ to specify the condition. Click on _Click to add condition_:
+
+![](workshops/visualbuilder/media/125.png)
+
+For the _Attribute_ scroll down and select the `status` field. For the _Value_ select `$variables.filter`. And for the operation, better select `equals ($eq)`, and click _Save_:
+
+![](workshops/visualbuilder/media/126.png)
+
+You're done!!
+
+You can now test your web app by clicking the _Play_ button and try your new filter capability.
+
+### Hands On Lab - Step 10: Publish your app
