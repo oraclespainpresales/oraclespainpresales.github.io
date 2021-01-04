@@ -316,7 +316,7 @@ You can mainly set the following parameters (among others):
 -   **Allow anonymous access**: By default this setting us unchecked. That means the application will need authentication to open it. Should you want the app to be anonymous (available to everyone without auth), just check this option
 -   **Embedding**: A Visual Application is a regular HTML5 web app. As such, it could be embedded in an external application through the `<iframe>` or `embed` tags. If you plan to do so, you must first allow it at Visual Builder level
 
-### Application Testing and Lifecycle
+### Application Testing
 
 You have two options to test your Web application:
 
@@ -619,7 +619,7 @@ In the Expression Editor, drag & drop the `dealAmount` variable to the edit wind
 In the _General_ tab, set the following settings:
 
 -   _Readonly_: `checked`
--   _Currency Display_: `$`
+-   _Converter_: `$`
 -   _Currency Format_: `Short`
 -   _Maximum Fraction Digits_: `0`
 
@@ -669,6 +669,10 @@ You will immediately see how the Company name is highlighted in red with a bigge
 
 ![](workshops/visualbuilder/media/105.png)
 
+Should the Company name does not get updated in the canvas, click the _Reload page_ button on the top bar:
+
+![](workshops/visualbuilder/media/127.png)
+
 If you are not yet a believer, open the source code of the page and see what you're really doing:
 
 ![](workshops/visualbuilder/media/106.png)
@@ -689,7 +693,7 @@ You will see that the _Text_ component has been placed just below the deal amoun
 
 ![](workshops/visualbuilder/media/115.png)
 
-Click the new element either in the Structure View or in the canvas and, in the Properties View, click the _fx_ button of the _Value_ field. As done before, drag & drop the `status` field (don't forget to clear the existing `Bind Text`value before the drag & drop).
+Click the new element either in the Structure View or in the canvas and, in the Properties View, click the _fx_ button of the _Value_ field. As done before, drag & drop the `status` field (don't forget to clear the existing `Bind Text` value before the drag & drop).
 
 We can see now each opportunity status as part of the data displayed in the List View:
 
@@ -729,7 +733,7 @@ We have successfully fed the dropdown component with an external service, but we
 
 Go to the element's _Data_ tab. After setting the binding with the wizard, some values have been automatically set. But you can see the _Value_ field is empty. In here is where we will bind a variable to hold the selected value of the dropdown component.
 
-There's no variable yet for that, but VBCS allows us to create one from the menu. Just click the ▼ icon in the _Value_ field and click the _Create Variable_ link (whether to create the variebl in the Page, Flow or Application scope, it depends on you and where you would be using such variable somewhere else in the application; in this case, we recommend to create a Page variable):
+There's no variable yet for that, but VBCS allows us to create one from the menu. Just click the ▼ icon in the _Value_ field and click the _Create Variable_ link (whether to create the variable in the Page, Flow or Application scope, it depends on you and where you will be using such variable somewhere else in the application; in this case, we recommend to create a Page variable):
 
 ![](workshops/visualbuilder/media/123.png)
 
@@ -760,3 +764,5 @@ You're done!!
 You can now test your web app by clicking the _Play_ button and try your new filter capability.
 
 ### Hands On Lab - Step 10: Publish your app
+
+As explained in the _Application Lifecycle_ section above, 
