@@ -823,4 +823,6 @@ In either case, a new tab will be opened with the _Live_ URL, that you can bookm
 
 For this project, the URL should be similar to this one:
 
-`https://**<your VBCS instance name>**-**<your tenant name>**.builder.ocp.oraclecloud.com/ic/builder/rt/**<your VBCS project name>**/live/webApps/**<your web app>**/`
+<pre>
+https://<b><your VBCS instance name></b>-**<your tenant name>**.builder.ocp.oraclecloud.com/ic/builder/rt/**<your VBCS project name>**/live/webApps/**<your web app>**/
+</pre>
