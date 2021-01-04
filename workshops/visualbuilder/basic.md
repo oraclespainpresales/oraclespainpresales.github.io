@@ -334,11 +334,12 @@ A Visual Application can be easily versioned from the application browser. You'l
 
 ![](workshops/visualbuilder/media/41.png)
 
-Each **application** may have one or multiple versions and **each version** may have three status:
+Each **application** may have one or multiple versions and **each version** may have four status:
 
 -   **Development**: In the development stage you design your application by building pages and creating business objects. You also use development versions to update the application to fix any problems revealed while testing the application.
 -   **Staging**: You use the staged application to prepare the application for publication. You can distribute the URI of the staged application to team members who can help you test the behavior of the application, identify where it can be improved and to test your changes. You can re-stage a version as many times as you need.
 -   **Live**: Each time that you are ready to publish a new version of your application you should lock the live version of your application until the new version is published. You cannot make changes to a version of an application after it is published and live. To make additional changes to the application you need to create a new version. The URL of a Live application **does not change from version to version**.
+-   **Obsolete**: Indicates that this version was published but has been superseded by a newer version. Obsolete applications are read-only 
 
 You can change the stage (**Development** --> **Staging** and **Staging** --> **Live**) from within the application right-hamburger icon in the Application Explorer...
 
@@ -765,4 +766,61 @@ You can now test your web app by clicking the _Play_ button and try your new fil
 
 ### Hands On Lab - Step 10: Publish your app
 
-As explained in the _Application Lifecycle_ section above, 
+As explained in the _Application Lifecycle_ section above, a VBCS project and all the web or mobile applications contained on it, can have four status: _Development_, _Staging_, _Live_ and _Obsolete_.
+
+Moving an application from _Development_ to _Staging_ means we're in a _test_ stage of the application. We can still develop on such version.
+
+Moving an application from _Staging_ to _Live_ means we're rolling out this version of the application as the new production version for it. _Live_ versions are read-only and cannot be modified. Should you want to make new changes, you'll need to create a new version. _Live_ web applications have the same URL.
+
+You cannot rollback from _Staging_ to _Development_ or from _Live_ to _Staging_
+
+When you have Business Objects in your project, you'll be asked about what to do with the BO data contained in the application, taking into account that the Data (not the BO metadata or definition, but the data itself) is related to the application lifecycle status.
+
+When moving from _Development_ to _Staging_:
+
+![](workshops/visualbuilder/media/128.png)
+
+When moving from _Staging_ to _Live_:
+
+
+In our case, we will be _moving_ the data from _Development_ (which is where we imported the BO definition and data) up to _Live_. So select "Populate Stage with Development data" when Staging the application first:
+
+![](workshops/visualbuilder/media/129.png)
+
+Once _Staged_, you can check the new status in the top bar:
+
+![](workshops/visualbuilder/media/130.png)
+
+Or if you _close_ the editor by clicking the top-left hamburger icon and then _All Applications_:
+
+![](workshops/visualbuilder/media/131.png)
+
+you can see the status of all your projects & versions in your VBCS instance:
+
+![](workshops/visualbuilder/media/132.png)
+
+Finally, let's move from _Stage_ to _Live_. Only _Staged_ projects can be promoted to _Live_. You can promote a project from within the Applications list menu by clicking its hamburger icon:
+
+![](workshops/visualbuilder/media/133.png)
+
+or, if you have your project opened, by clicking the top-right hamburger icon menu:
+
+![](workshops/visualbuilder/media/134.png)
+
+Either so, click the _Publish_ option making sure you select the option "Include data from Stage":
+
+![](workshops/visualbuilder/media/135.png)
+
+To obtain the _Live_ URL of your applications, you can click the _Open Published Application_ option in the top-right hamburger icon if you have the project opened in the editor:
+
+![](workshops/visualbuilder/media/136.png)
+
+or in the Applications browser, click the project's _Live_ status link to get a popup menu of all the web & mobile applications contained in such project (remember that you can have multiple web and mobile applications in a single _project_):
+
+![](workshops/visualbuilder/media/137.png)
+
+In either case, a new tab will be opened with the _Live_ URL, that you can bookmark. This _Live_ URL **will never change** when you promote to _Live_ new versions of your project.
+
+For this project, the URL should be similar to this one:
+
+`https://**<your VBCS instance name>**-**<your tenant name>**.builder.ocp.oraclecloud.com/ic/builder/rt/**<your VBCS project name>**/live/webApps/**<your web app>**/`
