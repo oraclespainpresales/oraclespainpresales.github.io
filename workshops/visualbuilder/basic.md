@@ -782,7 +782,7 @@ When moving from _Development_ to _Staging_:
 
 When moving from _Staging_ to _Live_:
 
-![](workshops/visualbuilder/media/135.png)
+![](workshops/visualbuilder/media/138.png)
 
 In our case, we will be _moving_ the data from _Development_ (which is where we imported the BO definition and data) up to _Live_. So select "Populate Stage with Development data" when Staging the application first:
 
