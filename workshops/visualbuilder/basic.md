@@ -525,7 +525,11 @@ Inside the Top _Flex Row_ drag & drop an additional _Panel_ and, once done, make
 
 ![](workshops/visualbuilder/media/147.png)
 
-On this last _Flew Row_, change also the _Direction_ to `Vertical`, the _Align_ to `center` and _Wrap Items_ to `Don't Wrap`:
+On the First Panel, set the _Item Sizing_ to `Auto`:
+
+![](workshops/visualbuilder/media/154.png)
+
+On the last _Flew Row_, change also the _Direction_ to `Vertical`, the _Align_ to `center` and _Wrap Items_ to `Don't Wrap`:
 
 ![](workshops/visualbuilder/media/148.png)
 
@@ -555,17 +559,19 @@ We will set the condition later and, for now, we don't want this panel to be dis
 
 To display the deal information, we're going to use a `List` component.
 
-In the `Components` tab, scroll down until the `Collection` section and drag & drop the `List View` component into the canvas:
+First, let's add a new _Flex Container_ inside the First Panel's _Flex Row_ seeting its _Direction_ to `Vertical` and adding the _style_ `height:90%` to it:
+
+![](workshops/visualbuilder/media/152.png)
+
+![](workshops/visualbuilder/media/153.png)
+
+In the `Components` tab, scroll down until the `Collection` section and drag & drop the `List View` component into the just added _Flex Container_:
 
 ![](workshops/visualbuilder/media/82.png)
 
 ![](workshops/visualbuilder/media/83.png)
 
-Once added, you can review the page structure and hierarchy of the different components you keep adding. When you add a new component, you can drag & drop it to the canvas or to the structure tree to position it exactly where you want:
-
-![](workshops/visualbuilder/media/84.png)
-
-You can also view (and edit!) the HTML source code of the page by clicking the `Code` button:
+Once added, you can view (and edit!) the HTML source code of the page by clicking the `Code` button:
 
 ![](workshops/visualbuilder/media/85.png)
 
