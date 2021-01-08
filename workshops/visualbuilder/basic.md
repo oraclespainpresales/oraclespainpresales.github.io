@@ -774,21 +774,13 @@ We can see now each opportunity status as part of the data displayed in the List
 
 Time to provide the requested filter feature. We can use the typical HTML Dropdown component to select which deal status we're filtering by, and then apply such filter on the data. The HTML Dropdown component is available in VBCS as _Select (Single)_ UI component.
 
-Let's first add the _Select (Single)_ component to our design. Drag & drop it inside the existing _Grid Row_ and just above the _List View_:
+Let's first add the _Select (Single)_ component to our design. Drag & drop it inside the _Flex Container_ containing the _List View_ and and just above the it:
 
 ![](workshops/visualbuilder/media/117.png)
 
-![](workshops/visualbuilder/media/118.png)
-
-If you placed the component in the wrong position, you can always _Undo_ the operation or simply delete it and try again.
-
-You can see that the layout is not what you'd like, as the Dropdown component should be on the top. To fix this, let's first to change the container of the List View from the existing _Grid_ type to _Flex_ (the flex container is a flexible container which is useful for responsive designs that optimize the use of the available space)
-
-Click the _Grid Row_ element and in the Properties View change the type from `Grid` to `Flex` and the direction to `Vertical`:
-
-![](workshops/visualbuilder/media/119.png)
-
 ![](workshops/visualbuilder/media/120.png)
+
+if you get to place it in the wrong spot, you can always _Undo_ the operation or simply delete it and try again.
 
 Now select the new _Single Select_ element, change the _Label Hint_ to `Filter by Opportunity Status`.
 
