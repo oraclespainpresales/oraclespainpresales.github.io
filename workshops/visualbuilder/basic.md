@@ -485,7 +485,21 @@ Review the artifacts created by VBCS: one `main` flow with a `main-start` web pa
 
 ![](workshops/visualbuilder/media/81.png)
 
-### Hands On Lab - Step 5: Add List Component and retrieve BO data
+### Hands On Lab - Step 5: Build Visual Structure
+
+To build our web application, we have drawn on the following mockup:
+
+![](workshops/visualbuilder/media/139.png)
+
+The main page will contain a list of the deals, where each row will show information about the Deal's sales rep, amount, status and date. Also, it'd be nice to show an avatar picture of the sales rep on the left. On top of the list, a dropdown ui component will allow us to filter the list based on the deal status.
+
+Additionally, when selecting any of the deals, the list will be shrinked to the 50% of the screen to make room for a new panel on the right:
+
+![](workshops/visualbuilder/media/140.png)
+
+which will display some more details about the selected deal's Sales Rep like two charts about his/her achievement.
+
+### Hands On Lab - Step 6: Add List Component and retrieve BO data
 
 To display the deal information, we're going to use a `List` component.
 
@@ -541,7 +555,7 @@ You now can see how after setting the List View's data source, the data is refre
 
 ![](workshops/visualbuilder/media/92.png)
 
-### Hands On Lab - Step 6: Test what you have done so far
+### Hands On Lab - Step 7: Test what you have done so far
 
 Although you see the life data during design time, let's bring the Preview feature of VBCS.
 
@@ -551,7 +565,7 @@ Whenever you want during the development of an application, as explained before 
 
 Do so and review what you have done so far.
 
-### Hands On Lab - Step 7: Include Avatar picture in table
+### Hands On Lab - Step 8: Include Avatar picture in table
 
 It'd be nice to add an actual picture of the sales rep of each deal entry on the table. We can do so very easily following the next steps.
 
@@ -597,7 +611,7 @@ Now, the list looks much better!
 
 ![](workshops/visualbuilder/media/100.png)
 
-### Hands On Lab - Step 8: Improve data visualization with templates and your own CSS styles
+### Hands On Lab - Step 9: Improve data visualization with templates and your own CSS styles
 
 You can see how the _deal amount_ number is not properly formatted as currency. We're going to change the existing format of the deal amount with an _Input Number_ component.
 
@@ -680,7 +694,7 @@ If you are not yet a believer, open the source code of the page and see what you
 
 This is pure HTML5+CSS stuff in a LowCode way!
 
-### Hands On Lab - Step 9: Add filter from external service
+### Hands On Lab - Step 10: Add filter from external service
 
 If you remember, the business users would like to filter the list based on the status of the opportunity.
 
@@ -764,7 +778,7 @@ You're done!!
 
 You can now test your web app by clicking the _Play_ button and try your new filter capability.
 
-### Hands On Lab - Step 10: Publish your app
+### Hands On Lab - Step 11: Publish your app
 
 As explained in the _Application Lifecycle_ section above, a VBCS project and all the web or mobile applications contained on it, can have four status: _Development_, _Staging_, _Live_ and _Obsolete_.
 
