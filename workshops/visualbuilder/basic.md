@@ -499,6 +499,58 @@ Additionally, when selecting any of the deals, the list will be shrinked to the 
 
 which will display some more details about the selected deal's Sales Rep like two charts about his/her achievement.
 
+Once we create a new Web App not based on any template, we start with a completely empty page. So let's start first dragging & dropping all containers.
+
+Locate the _Panel_ component in the _Components_ palette and drag & drop it in the emptied structure view:
+
+![](workshops/visualbuilder/media/141.png)
+
+![](workshops/visualbuilder/media/142.png)
+
+By default, VBCS uses the _Grid Row_ container, a 12-column grid that is useful when you want to align components precisely according to the grid. But for our purpose, we need to change it to a _Flex Container_ (the flex container is a flexible container which is useful for responsive designs that optimize the use of the available space):
+
+![](workshops/visualbuilder/media/143.png)
+
+Select the top _Grid Row_ and on its properties, change it to _Flex_:
+
+![](workshops/visualbuilder/media/144.png)
+
+Do the same with the other _Grid Row_ under the _Panel_ element, setting its direction to `Vertical`:
+
+![](workshops/visualbuilder/media/145.png)
+
+Inside the Top _Flex Row_ drag & drop an additional _Panel_ and, once done, make sure to change the contained _Grid Row_ to _Flex_ as with the previous ones:
+
+![](workshops/visualbuilder/media/146.png)
+
+![](workshops/visualbuilder/media/147.png)
+
+On this last _Flew Row_, change also the _Direction_ to `Vertical`, the _Align_ to `center` and _Wrap Items_ to `Don't Wrap`:
+
+![](workshops/visualbuilder/media/148.png)
+
+Also, in order to make sure all containers expand to the right size, add the following CSS _style_ attributes:
+
+Top Flex Row: `height:82vh`
+First Panel: `max-height:82vh`
+First Panel's Flex Row: `height:100%`
+Second Panel: `height:82vh;min-width:40vw;max-width:60vw`
+Second Panel's Flew Row: `width:100%;height:100%`
+
+You can set the CSS _style_ attribute by selecting the component and clicking the _All_ properties tab and within the _General Attributes_ section:
+
+![](workshops/visualbuilder/media/149.png)
+
+The _Second Panel_ must only be displayed under certain circumstances (that will be handled later). You can add conditions to display any UI component in VBCS by surrounding it with with an `if` clause.
+
+To do so, right-click on the _Second Panel_ and select `If` under the _Surround_ menu:
+
+![](workshops/visualbuilder/media/150.png)
+
+We will set the condition later and, for now, we don't want this panel to be displayed. So, select the `Bind If` element and clicking the _fx_ button, set the default condition from `true` to `false`:
+
+![](workshops/visualbuilder/media/151.png)
+
 ### Hands On Lab - Step 6: Add List Component and retrieve BO data
 
 To display the deal information, we're going to use a `List` component.
