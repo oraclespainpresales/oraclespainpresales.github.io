@@ -891,3 +891,28 @@ For this project, the URL should be similar to this one:
 ```
 https://<your VBCS instance name>-<your tenant name>.builder.ocp.oraclecloud.com/ic/builder/rt/<your VBCS project name>/live/webApps/<your web app>/
 ```
+
+### Hands On Lab - Step 12: Add Sales Rep details
+
+Although we have published our app already, you will realize we're still missing to include the _Sales Rep details_ as requested and described before:
+
+![](workshops/visualbuilder/media/140.png)
+
+Going back to the VBCS applications browser, our app (version 1.0) is already in _Live_ state and cannot be modified any more. As we still need to add some more development on the application, we need to create a **new version** and continue from it.
+
+Still in the applications browser, click the application's hamburger menu (on the right) and click the _New Version_ option:
+
+![](workshops/visualbuilder/media/155.png)
+
+Type `1.0.1` as the new version and click _Create_:
+
+![](workshops/visualbuilder/media/156.png)
+
+Once created, you can expand the application menu to see all the different versions available and the status of each one:
+
+![](workshops/visualbuilder/media/157.png)
+
+To continue the development, simply click the application name's link of the correspondent _Development_ version. Once opened, notice the new version and status:
+
+![](workshops/visualbuilder/media/158.png)
+
