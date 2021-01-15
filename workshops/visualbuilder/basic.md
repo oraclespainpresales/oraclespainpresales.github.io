@@ -892,7 +892,7 @@ For this project, the URL should be similar to this one:
 https://<your VBCS instance name>-<your tenant name>.builder.ocp.oraclecloud.com/ic/builder/rt/<your VBCS project name>/live/webApps/<your web app>/
 ```
 
-### Hands On Lab - Step 12: Add Sales Rep details
+### Hands On Lab - Step 12: Create a New Version
 
 Although we have published our app already, you will realize we're still missing to include the _Sales Rep details_ as requested and described before:
 
@@ -916,3 +916,10 @@ To continue the development, simply click the application name's link of the cor
 
 ![](workshops/visualbuilder/media/158.png)
 
+### Hands On Lab - Step 13: Handle List Selection
+
+### Hands On Lab - Step 14: Add Sales Rep details
+
+### Hands On Lab - Step 15: Add Charts
+
+### Hands On Lab - Step 16: Publish New Version
