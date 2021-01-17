@@ -918,6 +918,165 @@ To continue the development, simply click the application name's link of the cor
 
 ### Hands On Lab - Step 13: Handle List Selection
 
+This new development is about selecting one of the rows and display a new section with information about the row's ooportunity's sales rep.
+
+So first, we need to capture the event of the selection of a row by clicking on it, and, obviously, getting the selected opportunity's sales rep associated.
+
+In the Structure View, select the _List View_ component. On its Properties View, click the _Events_ tab. Nearly each UI component you can use in VBCS can produce a number of events that you can easily _capture_ and invoke your own procedure when the event gets triggered. Of course, based on the nature of the UI component, the events produced will vary (e.g.: a Button UI component can produce a _click button_ event). Click the _New Event_ dropdown button and select the quick start option _first-selected-item_. This specific event gets triggered whenever you select/click on a new row in the list:
+
+![](workshops/visualbuilder/media/159.png)
+
+VBCS automatically creates the _event listener_ and associates a brand new _Action Chain_ to it, which is opened for you. Before modeling the new Action Chain, let's review what has just been created by the quick start wizard. In the top bar, go to the _Event Listeners_ tab and check how a new Component Event Listener has been created for the List View component and its _first-selected-item_ specific event. Also, it's been associated with a new Action Chain:
+
+![](workshops/visualbuilder/media/160.png)
+
+You can click in the _Go to Action Chain_ link to go back to the Action Chain tab. In here, we will model the flow of the different actions to be performed whenever you select a new row in the List View component. Firstly, we want to keep the Sales Rep data associated with the selected row. As we're goign to reuse such information later when building the details panel, let's keep such information in a separate variable.
+
+Click the _Types_ tab and the _Type_ / _Custom_ button to create a new specific object type:
+
+![](workshops/visualbuilder/media/161.png)
+
+Name it `salesRepType` of type _Object_ and click _Create_:
+
+![](workshops/visualbuilder/media/162.png)
+
+Using the _Add Field_ link, add two fields of type _String_ with names `name` and `surname`:
+
+![](workshops/visualbuilder/media/163.png)
+
+Now let's create a variable of type `salesRepType`. Go to the _Variables_ tab, click the _+ Variable_ button. Type `selectedSalesRep` as the variable name (ID) and scroll down in the _Type_ list until you find the `salesRepType` type to select it. Click _Create_ when done:
+
+![](workshops/visualbuilder/media/164.png)
+
+Let's go back to the Action Chain modeling. Go to the _Actions_ tab and open the `ListViewFirstSelectedItemChangeChain` chain, if not already opened:
+
+![](workshops/visualbuilder/media/165.png)
+
+In this triggered event, two objects are passed as input data containing a JSON object with all the data and a index key of the selected row. We need to extract & copy the name and surname attributes in our brand new variable.
+
+To do so, we first drag & drop a _Assign Variables_ action at the beginning of the flow as follows:
+
+![](workshops/visualbuilder/media/166.png)
+
+Once placed, click on it to open its properties. Click the _Assign_ link to start assigning values to variables:
+
+![](workshops/visualbuilder/media/167.png)
+
+In the mapper, expand the `selectedSalesRep` variable and drag & drop the `rowData` variable on the left to **both** `name` and `surname` attributes:
+
+![](workshops/visualbuilder/media/168.png)
+
+`rowData` is actually the whole row data JSON object, containing the actual attributes we really need: `repName` and `repSurname`.
+
+Click on the mapped `name` attribute and add `.repName` to the formula:
+
+![](workshops/visualbuilder/media/169.png)
+
+Do the same with the `surname` attribute adding `.repSurname` to the formula. Click _Save_ to continue.
+
+Next, we need to load **all** data related to the given Sales Rep. Such data is in the Business Object that already populates the List View, but we need to filter the request by the selected Sales Rep (by its `name` and `surname`). Thus, we need to invoke the existing Business Object REST API but providing a query filter.
+
+Drag & drop the _Call REST Endpoint_ action just after the _Assign Variables_ action in your flow and click the _Select_ link on its Properties View to select which REST service is to be invoked: 
+
+![](workshops/visualbuilder/media/170.png)
+
+Under _Business Objects / Deals_ select the `[GET] /Deals` operation and click _Select_:
+
+![](workshops/visualbuilder/media/171.png)
+
+If we leave this call as-is, all BO data will be retrieved and we don't want that. In the Properties View, click the _Assign_ link in the _Input Parameters_ section:
+
+![](workshops/visualbuilder/media/172.png)
+
+One of the input parameters available is the `q` parameter which makes use of schemes like mongoDB query, SCIM or open search. Click the `q` parameter, **first** make sure the _Expression_ format is selected and then type in the following:
+
+`"repName='" + $page.variables.selectedSalesRep.name + "' and repSurname='" + $page.variables.selectedSalesRep.surname + "'"`
+
+![](workshops/visualbuilder/media/173.png)
+
+Once invoked with this query, we have all data related to the selected Sales Rep, ready to be processed for the charts.
+
+But before doing that, let's show the Sales Rep details panel on the right. Click in the _Page Designer_ tab, click on the _Bind If_ element in the Structure View and click the _fx_ button in the _Test_ field:
+
+![](workshops/visualbuilder/media/174.png)
+
+The _Bind If_ element renders all its underlying HTML elements if the _Test_ formula evaluates to `true`. Our _Bind If_ element wraps the Sales Rep details _Panel_. We want to show it only when a Sales Rep has been selected. As we map the `selectedSalesRep` variable when we select the row in the _List View_, the easiest way to drag and drop the, i.e., `selectedSalesRep.name` attribute, which will evaluates to `true` whenever it has a value:
+
+![](workshops/visualbuilder/media/175.png)
+
+Click _Save_ and then go to _Live_ mode in the editor. Then, select any of the rows and see how the (empty) Panel is displayed:
+
+![](workshops/visualbuilder/media/176.png)
+
+Go back to _Design_ mode. Let's fill up the details panel with information about the Sales Rep.
+
+Set the panel's _Flew Row_ style attribute with:
+
+`width:100%;height:100%`
+
+Drag & drop **two** new _Flex Containers_ inside the _Flew Row_:
+
+![](workshops/visualbuilder/media/177.png)
+
+and set the following settings on each one:
+
+First Flew Container:
+-   _Direction_: `Horizontal`
+-   _Align_: `center``
+-   _Add Items Padding_: `checked`
+-   _Style attribute_: `width:100%;height:10em`
+
+Second Flew Container:
+-   _Style attribute_: `width:100%;overflow-y: auto;`
+
+In the First (top) Flex Container, drag & drop, on this order, the following elements: _Avatar_, _Flex Container_ and a _Button_. In this new _Flex Container_ drag & drop inside a _Heading_ element (a `<> Cell` element is added automatically when dragging certain UI components):
+
+![](workshops/visualbuilder/media/178.png)
+
+![](workshops/visualbuilder/media/179.png)
+
+Select the _Avatar_ element, click the _fx_ button in the _Src_ field and type the following:
+
+`$application.path + 'resources/images/' + $variables.selectedSalesRep.name + $variables.selectedSalesRep.surname + '.jpg'`
+
+As we did before in the List View, we're selecting the sales rep picture by using, in this case, the `selectedSalesRep` variable attributes. Change the _Avatar_ _Size_ to `Extra Large`.
+
+Selec the _Heading_ element, click the _fx_ button in the _Text_ field and type the following:
+
+`$variables.selectedSalesRep.name + " " + $variables.selectedSalesRep.surname`
+
+Select the _Button_ element and set the following settings:
+
+-   _Display_: `Icons`
+-   _Chroming_: `Borderless``
+-   _Align_: `flex-start`
+
+![](workshops/visualbuilder/media/180.png)
+
+We're going to use an icon rather than a text for the button. In the _startIcon_ slot, click the _+_ button and select _Icon_:
+
+![](workshops/visualbuilder/media/181.png)
+
+Click the new _Icon_ link and then the _Icon_ button:
+
+![](workshops/visualbuilder/media/182.png)
+
+Scroll down and select the _Delete_ image. Click _Select_ to select it and continue:
+
+![](workshops/visualbuilder/media/183.png)
+
+We still need to add an action to this button. In the Structure View, select the button and in the _Events_ tab in the Properties View, click the _+ New Event_ button and click the _Quick Start: 'ojAction'_ menu:
+
+![](workshops/visualbuilder/media/184.png)
+
+A new Action Chain has been automatically created and associated with the button's _Click_ event. This button will simply close the Sales Rep panel. To do so, we just need to _reset_ the `selectedSalesRep` to empty it.
+
+Drag & drop a _Reset Variables_ action and in the _Variables to Reset_ just scroll down until you find the `selectedSalesRep`:
+
+![](workshops/visualbuilder/media/185.png)
+
+
+
 ### Hands On Lab - Step 14: Add Sales Rep details
 
 ### Hands On Lab - Step 15: Add Charts
