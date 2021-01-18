@@ -1010,7 +1010,9 @@ Click _Save_ and then go to _Live_ mode in the editor. Then, select any of the r
 
 Go back to _Design_ mode. Let's fill up the details panel with information about the Sales Rep.
 
-Set the panel's _Flew Row_ style attribute with:
+### Hands On Lab - Step 14: Add Sales Rep details
+
+Let's start by setting the panel's _Flew Row_ style attribute with:
 
 `width:100%;height:100%`
 
@@ -1075,10 +1077,31 @@ Drag & drop a _Reset Variables_ action and in the _Variables to Reset_ just scro
 
 ![](workshops/visualbuilder/media/185.png)
 
-
-
-### Hands On Lab - Step 14: Add Sales Rep details
+You can try it by going to _Live_ mode, click on any of the rows to display the Sales Rep panel and then the `X` button to close it.
 
 ### Hands On Lab - Step 15: Add Charts
+
+During the Step 13 section above, we already got all selected Sales Rep data needed to perform some aggregation operations and prepare the data to be used by the two charts (pie and bar) we want to use.
+
+VBCS charts use a specific JSON type to build them. Let's create a similar type and variables that will be used later to feed the charts.
+
+Go to the _Types_ tab and create a new Custom one by clicking the _+ Type_ button and _Custom_ submenu. Name the new type as `chartType` and add the following fields:
+
+`group` (string)
+`id` (number)
+`series` (string)
+`value` (number)
+
+![](workshops/visualbuilder/media/186.png)
+
+We're going to feed these two charts with a variable of type _Array Data Provider_. Go to the _Variables_ tab and create two new variables of type _Array Data Provider_. Name them as `pieADP` and `barADP`. When created, make sure its _Data_ setting is set to _Assign Data Later_, the _Item Type_ is set to the `chartType` type and the _Key Attributes_ is set to `id`:
+
+![](workshops/visualbuilder/media/187.png)
+
+Now, go to the _Actions_ tab and open the `ListViewFirstSelectedItemChangeChain` Action Chain. If there's other Action Chain already opened, you can do so by either selecting it from the dropdown menu or by clicking the _Action Chains_ link to open the Action Chains browser:
+
+![](workshops/visualbuilder/media/188.png)
+
+
 
 ### Hands On Lab - Step 16: Publish New Version
