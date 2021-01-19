@@ -1022,13 +1022,13 @@ Drag & drop **two** new _Flex Containers_ inside the _Flew Row_:
 
 and set the following settings on each one:
 
-First Flew Container:
+First Flex Container:
 -   _Direction_: `Horizontal`
 -   _Align_: `center``
 -   _Add Items Padding_: `checked`
 -   _Style attribute_: `width:100%;height:10em`
 
-Second Flew Container:
+Second Flex Container:
 -   _Style attribute_: `width:100%;overflow-y: auto;`
 
 In the First (top) Flex Container, drag & drop, on this order, the following elements: _Avatar_, _Flex Container_ and a _Button_. In this new _Flex Container_ drag & drop inside a _Heading_ element (a `<> Cell` element is added automatically when dragging certain UI components):
@@ -1042,6 +1042,11 @@ Select the _Avatar_ element, click the _fx_ button in the _Src_ field and type t
 `$application.path + 'resources/images/' + $variables.selectedSalesRep.name + $variables.selectedSalesRep.surname + '.jpg'`
 
 As we did before in the List View, we're selecting the sales rep picture by using, in this case, the `selectedSalesRep` variable attributes. Change the _Avatar_ _Size_ to `Extra Large`.
+
+Select the _Flex Container_ that contains the _Heading_ element and set the following properties:
+
+-   _Direction_: `Horizontal`
+-   _Justify_: `center`
 
 Selec the _Heading_ element, click the _fx_ button in the _Text_ field and type the following:
 
@@ -1094,7 +1099,7 @@ Go to the _Types_ tab and create a new Custom one by clicking the _+ Type_ butto
 
 ![](workshops/visualbuilder/media/186.png)
 
-We're going to feed these two charts with a variable of type _Array Data Provider_. Go to the _Variables_ tab and create two new variables of type _Array Data Provider_. Name them as `pieADP` and `barADP`. When created, make sure its _Data_ setting is set to _Assign Data Later_, the _Item Type_ is set to the `chartType` type and the _Key Attributes_ is set to `id`:
+We're going to feed these two charts with a variable of type _Array Data Provider_ (ADP). Go to the _Variables_ tab and create two new variables of type _Array Data Provider_. Name them as `pieADP` and `barADP`. When created, make sure its _Data_ setting is set to _Assign Data Later_, the _Item Type_ is set to the `chartType` type and the _Key Attributes_ is set to `id`:
 
 ![](workshops/visualbuilder/media/187.png)
 
@@ -1102,6 +1107,145 @@ Now, go to the _Actions_ tab and open the `ListViewFirstSelectedItemChangeChain`
 
 ![](workshops/visualbuilder/media/188.png)
 
+As done in the previous step, we are retrieving the sales rep data in the _Call REST Endpoint_ action. Now, in the `success` branch, we need to process the data and feed the just created ADP variables.
 
+Drag & drop a _Reset Variables_ and a _Run in Parallel_ actions (on this order):
+
+![](workshops/visualbuilder/media/189.png)
+
+In the _Reset Variables_ action, set both variables `pieADP` and `barADP`. This is to make sure we reset the content of the charts when we change the sales rep selected.
+
+![](workshops/visualbuilder/media/190.png)
+
+We need to use some Javascript code to process the data and produce the needed aggregated JSON array structure that the charts do use. We need to produce two different structures (one for the `pieADP` and the other for the `barADP` variables) and we can do that in parallel, that's why we are using the _Run in Parallel_ action.
+
+Drag & drop a _Call Module Function_ and an _Assign Variables_ actions to two separate branches in the _Run in Parallel_ as follows:
+
+![](workshops/visualbuilder/media/191.png)
+
+Select the first _Call Module Function_. Set the `ID` to `aggregateDealType` and the Label to `Aggregate Deal Type`. Click the _Create_ link to create a new Javascript function named `aggregateDealType`:
+
+![](workshops/visualbuilder/media/192.png)
+
+Select the **second** _Call Module Function_. Set the `ID` to `aggregateDealAmount` and the Label to `Aggregate Deal Amount`. Click the _Create_ link to create a new Javascript function named `aggregateDealType`.
+
+In **both** _Call Module Function_ activities, click the _Assign_ link in the _Input Parameters_ field and drag & drop the `callRestEndpoint1`'s `body` attribute to the `arg1` parameter:
+
+![](workshops/visualbuilder/media/193.png)
+
+Let's write some code!
+
+Go to the _JavaScript_ tab. You see how both functions have been declared but not yet with a body. What we need to do is to perform some aggregation to the input data, which is no more than the JSON response returned by the REST Call invoked just before in the Action Chain.
+
+![](workshops/visualbuilder/media/194.png)
+
+In order to help us in the aggregation, we're going to use the _Lodash_ Javascript library (see [here](https://lodash.com) for more information). VBCS is based on Oracle JET (as mentioned at the beginning of this workshop) and JET uses _RequireJS_ framework as the module and dependencies loader.
+
+To be able to make use of the _Lodash_ library inside our VBCS Javscript code, we just need to leverage _RequireJS_ and load it as follows:
+
+The library will be linked to its CDN: `https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.20/lodash.min.js``
+
+In the Javascript code window, type the following:
+
+`define(['https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.20/lodash.min.js'], function(_) {`
+
+![](workshops/visualbuilder/media/195.png)
+
+The `_` parameter we specify, is the way we will reference the library later in the Javascript code.
+
+Now, for each of the two functions, just copy & paste the correspond body as follows:
+
+```
+  PageModule.prototype.aggregateDealType = function (arg1) {
+    let i = 0;
+    let result = _(arg1.items).groupBy('status').map((o,k) => ({
+        id: ++i,
+        series: k,
+        value: o.length,
+        group: o[0].repName + " " + o[0].repSurname
+      })).value();
+    return result;
+  };
+
+  PageModule.prototype.aggregateDealAmount = function (arg1) {
+    let i = 0;
+    let result = _(arg1.items).groupBy('status').map((o,k) => ({
+        id: ++i,
+        series: k,
+        value: _.sumBy(o,'dealAmount'),
+        group: ""
+      })).value();
+    return result;
+  };
+```
+
+![](workshops/visualbuilder/media/196.png)
+
+We're done with the Javascript code for now. Go back to the _Action Chain_. Click on the _Assign Variables_ that we included before, to map the result of the JS Code calls to the ADP variables.
+
+Select the _Assign Variable_ action under `Aggregate Deal Type` and click the _Assign_ link on the Properties View on the right. Expand the `pieADP` variable on the right, and drag & drop the result from the `aggregateDealType` to the `data` attribute:
+
+![](workshops/visualbuilder/media/197.png)
+
+Repeat the same operation in the _Assign Variable_ action under `Aggregate Deal Amount` and click the _Assign_ link on the Properties View on the right. Expand the `barADP` variable on the right, and drag & drop the result from the `aggregateDealAmount` to the `data` attribute.
+
+We have the data ready, we just need to add the charts elements to the panel.
+
+Go to the _Page Designer_ tab and make sure you're viewing the Structure View.
+
+Drag & drop **two** _Flex Containers_ in the last existing (and empty as of now) _Flex Container_:
+
+![](workshops/visualbuilder/media/198.png)
+
+Set the _style_ of both to `width:100%`.
+
+In the first one, drag & drop a _Heading_ element and a _Pie Chart_ element:
+
+![](workshops/visualbuilder/media/199.png)
+
+For the _Heading_ element, set the _Text_ to `Deals by Status`, the _Level_ to `H4` and the _Align_ to `Center`.
+
+For the _Pie Chart_ element, go to the _Data_ tab and set the following properties as follows, using the _fx_ button on each them:
+
+-   _Data_: `$variables.pieADP`
+-   _Values_: `$current.data.value`
+
+![](workshops/visualbuilder/media/200.png)
+
+Go to the Properties' _General_ tab and click the _+_ button in the _itemTemplate_ slot to select the _Chart Item Template_:
+
+![](workshops/visualbuilder/media/201.png)
+
+If two templates get created, just delete one of them:
+
+![](workshops/visualbuilder/media/202.png)
+
+In the Structure View, select the _Chart Item_ element and set the following properties, always using the _fx_ button:
+
+-   _Group Id_: `[$current.data.group]`  (**DO NOT FORGET** the `[]`!!)
+-   _Series Id_: `$current.data.series`
+
+The Pie Chart is all set!
+
+![](workshops/visualbuilder/media/203.png)
+
+In the second _Flex Container__, drag & drop a _Heading_ element and a _Bar Chart_ element:
+
+![](workshops/visualbuilder/media/204.png)
+
+For the _Heading_ element, set the _Text_ to `Deals by Amount`, the _Level_ to `H4` and the _Align_ to `Center`.
+
+For the _Bar Chart_ element, go to the _Data_ tab and set the following properties as follows, using the _fx_ button on each them:
+
+-   _Data_: `$variables.barADP`
+-   _Values_: `$current.data.value`
+-   _Groups_: `[$current.data.group]`  (**DO NOT FORGET** the `[]`!!)
+-   _Series_: `$current.data.series`
+
+You're done with the Bar Chart too and now the application is ready to be published (again).
 
 ### Hands On Lab - Step 16: Publish New Version
+
+As we did before, just set the new version first to _Stage_ and then to _Publish_
+
+![](workshops/visualbuilder/media/205.png)
