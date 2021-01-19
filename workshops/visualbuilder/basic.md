@@ -1141,9 +1141,9 @@ Go to the _JavaScript_ tab. You see how both functions have been declared but no
 
 In order to help us in the aggregation, we're going to use the _Lodash_ Javascript library (see [here](https://lodash.com) for more information). VBCS is based on Oracle JET (as mentioned at the beginning of this workshop) and JET uses _RequireJS_ framework as the module and dependencies loader.
 
-To be able to make use of the _Lodash_ library inside our VBCS Javscript code, we just need to leverage _RequireJS_ and load it as follows:
+To be able to make use of the _Lodash_ library inside our VBCS Javscript code, we just need to leverage _RequireJS_.
 
-The library will be linked to its CDN: `https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.20/lodash.min.js``
+The library will be linked to its CDN: `https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.20/lodash.min.js`
 
 In the Javascript code window, type the following:
 
@@ -1181,7 +1181,7 @@ Now, for each of the two functions, just copy & paste the correspond body as fol
 
 ![](workshops/visualbuilder/media/196.png)
 
-We're done with the Javascript code for now. Go back to the _Action Chain_. Click on the _Assign Variables_ that we included before, to map the result of the JS Code calls to the ADP variables.
+We're done with the Javascript code. Go back to the _Action Chain_. Click on the _Assign Variables_ that we included before, to map the result of the JS Code calls to the ADP variables.
 
 Select the _Assign Variable_ action under `Aggregate Deal Type` and click the _Assign_ link on the Properties View on the right. Expand the `pieADP` variable on the right, and drag & drop the result from the `aggregateDealType` to the `data` attribute:
 
